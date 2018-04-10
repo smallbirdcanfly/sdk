@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_demo_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+
+        <EditText
+            android:id="@+id/ed_proudct_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="商品id"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="价格"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/button_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定额充值" />
+
+        <Button
+            android:id="@+id/button_pay_any_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任意充值" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登出" />
+
+        <Button
+            android:id="@+id/button_exitgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出游戏" />
+
+        <Button
+            android:id="@+id/button_role_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传游戏角色信息" />
+
+        <Button
+            android:id="@+id/button_null_pointexception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  空  指  针  " />
+
+    </LinearLayout>
+
+</RelativeLayout>

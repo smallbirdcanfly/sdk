@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp"
+        android:textColor="@null"
+        android:background="@null"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/yyb_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/temp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/shape_w"
+        android:clickable="true"
+        android:drawableLeft="@drawable/wx"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="与微信好友一起玩"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/yyb_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignRight="@+id/temp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_q"
+        android:clickable="true"
+        android:drawableLeft="@drawable/qq"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="与QQ好友一起玩"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>

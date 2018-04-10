@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <permissionConfig>
+        
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    
+	
+    </permissionConfig>
+    
+    
+    
+    <applicationConfig channelLauncherName="com.pyw.plugin.yyb.YYBSplashActivity">
+        
+        
+        <activity android:configChanges="orientation|screenSize|keyboardHidden" android:name="com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        
+
+
+        
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106408258" />
+
+                
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|keyboardHidden" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity android:configChanges="orientation|screenSize|keyboardHidden" android:excludeFromRecents="true" android:exported="true" android:label="WXEntryActivity" android:launchMode="singleTop" android:name="com.tencent.tmgp.yitxylu.wxapi.WXEntryActivity" android:taskAffinity="com.tencent.tmgp.yitxylu.diff" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+          
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxffb57730aa69aa10" />
+                
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:exported="true" android:name="com.tencent.midas.wx.APMidasWXPayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:configChanges="orientation|screenSize|keyboardHidden" android:exported="true" android:launchMode="singleTop" android:name="com.tencent.midas.qq.APMidasQQWalletActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="qwallet1106408258" />
+                
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden" />
+        
+    </applicationConfig>
+    
+</manifest>

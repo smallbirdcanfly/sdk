@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xyz.huawei"
+    android:versionCode="21"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 2.2.2新增 银联需要 -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="com.huawei.appmarket.provider.readPermission" />
+
+    <application
+        android:name="com.pyw.demo.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+             android:screenOrientation="portrait" 
+            android:name="com.pyw.demo.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize|fontScale|touchscreen|uiMode|layoutDirection"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop" >
+            <intent-filter>
+
+                <!--
+                	请游戏方主界面添加此属性 否则闪屏后进入不了游戏
+                	名称必须为：游戏包名+pyw.MAIN
+                -->
+                <action android:name="com.xyz.huawei.pyw.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 朋友玩闪屏配置 -->
+        <activity
+            android:name="com.pyw.plugin.huawei.HWSplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.flamingo.sdk.view.GPSplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- 朋友玩SDK===============start============= -->
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ForgetLoginPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.AccountManagerActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.SetPayPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.UserCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.VoucherActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ChargeCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetLoginPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.AccountBindingInquireActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetPayPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.MyVoucherActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindPassCardActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindAccountActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetAccountPwdActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|locale|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.MyBalanceActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.PassportIntroActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindMobilePhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetAccountPwdUnBindAccountActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.H5Activity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.FastRegisterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.IDCardInfomationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <service android:name="com.pengyouwan.sdk.service.CheckTokenService" />
+        <!-- 朋友玩SDK===============end============= -->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+        <!-- 银联支付 start -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 银联支付 end -->
+
+
+        <!-- TODO GAME huawei 接入配置 START -->
+        <!-- 浮标依赖的Activity声明，建议将此Activity的屏幕方向与应用的屏幕方向设置为一样的 -->
+        <activity
+            android:name="com.huawei.gameservice.sdk.view.dialog.NoticeActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/buoy_baseDialog" />
+        <activity
+            android:name="com.huawei.gameservice.sdk.view.dialog.UpdateActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/buoy_baseDialog" />
+        <activity
+            android:name="com.huawei.gameservice.sdk.view.dialog.BaseDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/buoy_loading_activity_style" >
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.gameservice.sdk.control.DownloadProgressDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/buoy_loading_activity_style" >
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.gameservice.sdk.control.SplashImageActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.huawei.gameservice.sdk.control.DummyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/buoy_loading_activity_style" >
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <!-- 注意：这个在targetSDK=N时，在游戏中必须申明，否则影响N版本下使用SDK安装华为游戏中心。 -->
+        <!-- 其中android:authorities里“游戏包名”必须要替换为游戏自己包名，否则会导致冲突，游戏无法安装！ -->
+        <!-- 详细说明请参考SDK接口文档 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.huawei.gb.huawei.installnewtype.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/buoy_provider_paths" />
+        </provider>
+        <!-- TODO huawei END -->
+
+    </application>
+
+</manifest>

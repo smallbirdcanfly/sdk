@@ -1,0 +1,179 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pyw.plugin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+     <!-- SDK 相关 start -->
+    <!-- 添加必要的权限支持 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 添加必要的权限支持 -->
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard 读写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 关闭应用用 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 反射根据包名强制关闭应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 聚宝云 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+
+    <!-- SDK 相关  end -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sec"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <service
+            android:name="com.mchsdk.paysdk.utils.Lolly"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" />
+        <activity android:name=".ShowLogActivity"/>
+        <!--<activity android:name="com.mchsdk.paysdk.activity.InitialActivity"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"-->
+        <!--android:configChanges="orientation|keyboardHidden|screenSize"></activity>-->
+
+        <!-- SDK相关 start -->
+        <!-- com.unity3d.player.UnityPlayerActivity在原生安卓中-->
+        <!--  <activity android:name="com.unity3d.player.UnityPlayerActivity" >
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+        -->
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCChoosePayActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.PTBPayResultActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/MCHControlTransparent">
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCPacksActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCPersonalInfoActivity"
+            android:launchMode="singleTask" >
+
+            <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCChangePasswordActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCMoneyRecordActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCGameRecordActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCAddPtbMoneyActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.DLKefuActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCBindPhoneActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCVisitorUpdateInfo">
+        </activity>
+        <service android:name="com.mchsdk.paysdk.server.MCHFloatService" >
+        </service>
+        <activity android:name="com.mchsdk.paysdk.activity.MCForgetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name="com.mchsdk.paysdk.activity.MCSocialActivity">
+        </activity>
+        <activity android:name="com.mchsdk.paysdk.activity.MCListViewActivity">
+        </activity>
+        <activity android:name="com.mchsdk.paysdk.activity.MCCommunicateActivity">
+        </activity>
+
+        <activity android:name="com.mchsdk.paysdk.activity.TransparencyActivity"
+            android:theme="@style/myTransparent"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCControlResActivity"
+            android:launchMode="singleTask"
+            android:exported="true" >
+            <intent-filter>
+                <!-- 包名.controlresback -->
+                <action android:name="com.xyz.huawei.controlresback" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+
+        <!-- 聚宝云 -->
+        <activity android:name="com.fanwei.bluearty.pluginmgr.DynamicActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name="com.mchsdk.paysdk.activity.MCJBYPayActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <!-- SDK客户端和SDK服务器针对不同游戏验签的key,对接之前联运提供给CP -->
+        <!-- CgsPEgsLEg8LCg== -->
+        <!--<meta-data-->
+        <!--android:name="paysdk_signkey"-->
+        <!--android:value="CgsPEgsLEg8LCg==" />-->
+        <!--联运SDK服务器接口地址的前面通用部分,对接前联运提供给CP-->
+        <!--<meta-data-->
+        <!--android:name="paysdk_ipaddress"-->
+        <!--android:value="http://meiti.vlcms.com/sdk.php" />-->
+        <!--android:value="http://a2.vlcms.com/sdk.php" /> -->
+
+        <!--去认证-->
+        <activity android:name="com.mchsdk.paysdk.activity.ToCertificateActivity">
+        </activity>
+    </application>
+
+</manifest>

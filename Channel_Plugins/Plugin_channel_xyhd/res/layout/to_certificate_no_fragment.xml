@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mch_attestation_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mch_tocerticate_edt_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="真实姓名"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/mch_et_toCertificate_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:layout_marginLeft="10dp"
+                android:hint="请输入您的真实姓名"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mch_tocerticate_edt_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="身份证号"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/mch_et_toCertificate_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:hint="请输入您的身份证号"
+                android:layout_marginLeft="10dp"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_certificate_wrong"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_certificate_wrong"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_img_authentication_prompt3x"
+                />
+
+            <TextView
+                android:id="@+id/text_certificate_wrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="身份证号已经被认证，不可重新认证"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:textColor="#FF6C7D" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/mch_attestation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/mch_tocerticate_btn_bg2"
+            android:text="提交"
+            android:textColor="#BEBEBE"
+            android:textSize="19sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="15sp"
+            android:text="根据2010年8月1日实施的《网络游戏管理暂行办法》,网络游戏用户需使用有效身份证件进行实名注册。为保证流畅游戏体验,享受健康游戏生活,请广大玩家尽快实名注册，且每个身份证号码只能认证一次。
+"
+            android:textColor="#BEBEBE" />
+
+    </LinearLayout>
+</LinearLayout>

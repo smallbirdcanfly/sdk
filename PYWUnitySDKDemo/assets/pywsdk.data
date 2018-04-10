@@ -1,0 +1,12 @@
+{
+    "info": {
+        "channel_id": "94",
+        "game_key": "020986b2",
+        "department_code":"1"
+    },
+    "channels": [
+		{
+        	"name": "tyyx"
+        }
+    ]
+}

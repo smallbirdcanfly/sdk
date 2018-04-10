@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: BASE+'libs')
+}
+
+android {
+    compileSdkVersion 25
+
+    buildToolsVersion '26.0.2'
+    useLibrary 'org.apache.http.legacy'
+
+    sourceSets {
+        main {
+            manifest.srcFile BASE+'AndroidManifest.xml'
+            java.srcDirs = [BASE+'src']
+            resources.srcDirs = [BASE+'src']
+            aidl.srcDirs = [BASE+'src']
+            renderscript.srcDirs = [BASE+'src']
+            res.srcDirs = [BASE+'res']
+            assets.srcDirs = [BASE+'assets']
+            jniLibs.srcDirs = [BASE+'libs']
+        }
+
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+//    externalNativeBuild{
+//        ndkBuild{
+//            path='jni/Android.mk'
+//        }
+//   }
+
+//    buildTypes {
+//        release {
+//            //混淆
+//            minifyEnabled false
+//            //加载默认混淆配置文件
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:background="@drawable/zy_login_bg_shape"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/zy_login_box_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_loginUserUsername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/zy_text_margin_left_right"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/zy_hint_login_user_username"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="@color/zy_edt_input_color"
+                android:textColorHint="@color/zy_hint_edt_color"
+                android:textSize="@dimen/zy_edit_text_size"/>
+
+            <LinearLayout
+                android:id="@+id/zy_selectName"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/zy_login_down_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/zy_color_login_box_gb"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_loginUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/zy_text_margin_left_right"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/zy_hint_login_user_password"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/zy_edt_input_color"
+                android:textColorHint="@color/zy_hint_edt_color"
+                android:textSize="@dimen/zy_edit_text_size"/>
+
+            <LinearLayout
+                android:id="@+id/zy_forgetPassword"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="忘记密码"
+                    android:textColor="@color/zy_sub_text_color"
+                    android:textSize="@dimen/zy_title_btn_text_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_loginUserSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/zy_select_common_btn"
+        android:text="立即登录"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/zy_title_btn_text_size"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_keFuQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="客服QQ：3095917108"
+            android:textColor="@color/zy_login_main_title_color"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_loginVersionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="v1.0.0"
+            android:textColor="@color/zy_login_main_title_color"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

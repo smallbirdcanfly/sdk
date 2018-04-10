@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/H5Demo/H5Demo.iml" filepath="$PROJECT_DIR$/H5Demo/H5Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NoPYWsdk/NoPYWsdk.iml" filepath="$PROJECT_DIR$/NoPYWsdk/NoPYWsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PYWUnitySDK.iml" filepath="$PROJECT_DIR$/PYWUnitySDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autotest/autotest.iml" filepath="$PROJECT_DIR$/autotest/autotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/h5_tempchannelplugin/h5_tempchannelplugin.iml" filepath="$PROJECT_DIR$/h5_tempchannelplugin/h5_tempchannelplugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin_channel_pyw/plugin_channel_pyw.iml" filepath="$PROJECT_DIR$/plugin_channel_pyw/plugin_channel_pyw.iml" />
+      <module fileurl="file://E:\SdkProjects\PYWUnitySDK\PYWUnitySDK\plugin_channel_smkj\plugin_channel_yj.iml" filepath="E:\SdkProjects\PYWUnitySDK\PYWUnitySDK\plugin_channel_smkj\plugin_channel_yj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pyw/pyw.iml" filepath="$PROJECT_DIR$/pyw/pyw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pyw_h5_plugin/pyw_h5_plugin.iml" filepath="$PROJECT_DIR$/pyw_h5_plugin/pyw_h5_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pyw_h5_plugin/pywunitysdk.iml" filepath="$PROJECT_DIR$/pyw_h5_plugin/pywunitysdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tempchannelplugin/tempchannelplugin.iml" filepath="$PROJECT_DIR$/tempchannelplugin/tempchannelplugin.iml" />
+    </modules>
+  </component>
+</project>

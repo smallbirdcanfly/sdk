@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <params>
+        <param name="appid"  required="1" showName="AppID" desc="pyw_sdk" bWriteInManifest="0" bWriteInClient="0" />
+        <param name="appkey"  required="1" showName="key" desc="pyw_sdk" bWriteInManifest="0" bWriteInClient="0" />
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+          <operation step="4" type="copyRes" from="res" to="res" />
+        <operation step="5" type="copyRes" from="root" to="" />
+    </operations>
+    
+    <version>
+        <name>uc</name>
+        <versionCode>0603</versionCode>
+        <versionName>1.0</versionName>
+    </version>    
+    
+</config>

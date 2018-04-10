@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/H5Demo" />
+            <option value="$PROJECT_DIR$/NoPYWsdk" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/autotest" />
+            <option value="$PROJECT_DIR$/h5_tempchannelplugin" />
+            <option value="$PROJECT_DIR$/plugin_channel_pyw" />
+            <option value="$PROJECT_DIR$/pyw" />
+            <option value="$PROJECT_DIR$/pyw_h5_plugin" />
+            <option value="$PROJECT_DIR$/tempchannelplugin" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

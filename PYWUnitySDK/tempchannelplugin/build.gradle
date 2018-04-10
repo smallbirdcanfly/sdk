@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    useLibrary 'org.apache.http.legacy'
+
+    sourceSets {
+        main {
+            //PYW为eclipse项目PYW工程的路径，该路径需要自行创建一个gradle.properties定义变量
+            manifest.srcFile BASE+'AndroidManifest.xml'
+            java.srcDirs = [BASE+'src']
+            resources.srcDirs = [BASE+'src']
+            aidl.srcDirs = [BASE+'src']
+            renderscript.srcDirs = [BASE+'src']
+            res.srcDirs = [BASE+'res']
+            assets.srcDirs = [BASE+'assets']
+            jniLibs.srcDirs = [BASE+'libs']
+        }
+
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: BASE+'libs', include: ['*.jar'])
+    compile project(':pyw')
+}

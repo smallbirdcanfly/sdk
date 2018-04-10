@@ -1,0 +1,1 @@
+include  ':plugin_channel_pyw', ':pyw_h5_plugin',  ':NoPYWsdk', ':H5Demo', ':pyw', ':tempchannelplugin', ':app',':autotest',':h5_tempchannelplugin'

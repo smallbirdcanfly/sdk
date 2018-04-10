@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xml>
+
+	<channels>		
+
+		<channel>
+			<param name="id" value="17" />
+			<param name="name" value="pyw" />
+			<param name="sdk" value="pyw" />
+			<param name="desc" value="朋友玩SDK" />
+			<param name="suffix" value=".pyw" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>1.0</versionName>
+			</sdk-version>			
+
+		</channel>
+
+		<channel>
+			<param name="id" value="25" />
+			<param name="name" value="yyb" />
+			<param name="sdk" value="yyb" />
+			<param name="desc" value="应用宝" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+		
+		<channel>
+			<param name="id" value="26" />
+			<param name="name" value="jjy" />
+			<param name="sdk" value="jjy" />
+			<param name="desc" value="九九游" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+		
+		<channel>
+			<param name="id" value="52" />
+			<param name="name" value="oppo" />
+			<param name="sdk" value="oppo" />
+			<param name="desc" value="oppo" />
+			<param name="suffix" value="com.youxigu.zgh5.oppo.nearme.gamecenter" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+		
+		<channel>
+			<param name="id" value="104" />
+			<param name="name" value="thy" />
+			<param name="sdk" value="thy" />
+			<param name="desc" value="thy" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+	<channel>
+			<param name="id" value="109" />
+			<param name="name" value="tthd" />
+			<param name="sdk" value="tthd" />
+			<param name="desc" value="tthd" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+		<channel>
+			<param name="id" value="49" />
+			<param name="name" value="syyx13" />
+			<param name="sdk" value="syyx13" />
+			<param name="desc" value="syyx13" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+		
+		<channel>
+			<param name="id" value="53" />
+			<param name="name" value="yxm" />
+			<param name="sdk" value="yxm" />
+			<param name="desc" value="yxm" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+		<channel>
+			<param name="id" value="51" />
+			<param name="name" value="vivo" />
+			<param name="sdk" value="vivo" />
+			<param name="desc" value="vivo" />
+			<param name="suffix" value="com.xuandou.qmzg.vivo" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+			<channel>
+			<param name="id" value="106" />
+			<param name="name" value="huawei" />
+			<param name="sdk" value="huawei" />
+			<param name="desc" value="huawei" />
+			<param name="suffix" value="" />	
+			<param name="splash" value="0" />
+
+			<sdk-params>
+				<param name="appid" value="1" />
+				<param name="appkey" value="1" />
+			</sdk-params>
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+
+																				
+	</channels>
+
+</xml>

@@ -1,0 +1,73 @@
+.class public Lcom/pyw/plugin/huawei/GlobalParam;
+.super Ljava/lang/Object;
+.source "GlobalParam.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/pyw/plugin/huawei/GlobalParam$PayParams;
+    }
+.end annotation
+
+
+# static fields
+.field public static final APP_ID:Ljava/lang/String; = "100236163"
+
+.field public static GAME_PRIV_KEY:Ljava/lang/String; = null
+
+.field public static final GAME_PUBLIC_KEY:Ljava/lang/String; = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqmkBrytv1wApGcONN27iOgEAHA7gbDFkc/lTvZIheTqYnWytXEpEeWaqhpr8qhdBVcoWHT8xWd0qSYm236h2Kp0AkoSZenR8eB/s4pyd2+DbbopYXqB35qpDzFrgq51ZoyR+FHPkS36EqIvZ+QFThhVz7yVa5fhqtTNbOs+TTl3dK/QTRp+OzcNUYfZqwxqXlvErV7ObeL445kM75T0Yn+ko5zZFDbf550rjhWo+kTmomLIb5hK64j5qTK7e6X6ZSQUJ7g4/BvifI2Pa+lKBNKfitfhUZNzIQY9xiGQst/f7bbLlMRuBIz+yuaAt43vgOFt+J9TDAojyAh4xwRLKjwIDAQAB"
+
+.field public static final GET_BUOY_PRIVATE_KEY:Ljava/lang/String; = "https://ip:port/HuaweiServerDemo/getBuoyPrivate"
+
+.field public static final GET_PAY_PRIVATE_KEY:Ljava/lang/String; = "https://ip:port/HuaweiServerDemo/getPayPrivate"
+
+.field public static final LOGIN_RSA_PUBLIC:Ljava/lang/String; = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnUt+Yk90XFRtqFZLxuQxRpe90EybO4baN3rT4nJHRC9V+4TziI9YVFmWkrwMlWlCWYBgM0PxcR0YZW0MRIPp9NlDPOIwGSmRckvi8m8Il/bcIOOAJH7U/Ob69AeRoW/EvmPy5dScvULZR/E0y+iYz6nkO83/1mhmEpQph/TGwWpUZVQCwqGazFD3jmLIaPHDul4AN+5nlUqRTcV1o57vb+GKTams77fu0LWm2XgmzUArDudKSB5rqEhUOKAeKipyo8lOdw32dyuetZl4wa/Qq1ZcAo8DURimCXpSgXuAdgM4BGJY2C4u7DI53Iia1Qb57mzYM7hOz0ZYzrlGDKY5TwIDAQAB"
+
+.field public static final PAY_ID:Ljava/lang/String; = "890086000102068711"
+
+.field public static final PAY_ORI:I = 0x1
+
+.field public static final PAY_ORI_LAND:I = 0x2
+
+.field public static PAY_RSA_PRIVATE:Ljava/lang/String; = null
+
+.field public static final PAY_RSA_PUBLIC:Ljava/lang/String; = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnbdaymFE2/QQ1OQJm0MYWGgh9MQ03yVFAYgy+gg7vqRbg32M+mvxenADRwhjJCviJwWTYxx1wlVLvSGRf/uiZk70YO3vxrrVHp7gk0DCxrA8VcYbAwQwXdpOdDZRc7OzozCteV8yL16IGqr8aLbjT7MPThDMdCzqgunCp00yougAjhRk14Iun3vCUSm9rNVQm3n2StEbkxk9kdLPb2Cetr6LSJN0j3yZAidk/Y4oruK7EF/STE8qRG0pni3X+oZau0G8tTS64Hx4lDHt81D+70voNNVMDz31uAKk+SH5oty0fyeyHf+in7QHuBursePmx8qnyD2sxk2he+epi7bBJwIDAQAB"
+
+.field public static PLAYID:Ljava/lang/String; = null
+
+.field public static final SIGN_TYPE:Ljava/lang/String; = "RSA256"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 21
+    const-string v0, "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqaQGvK2/XACkZw403buI6AQAcDuBsMWRz+VO9kiF5OpidbK1cSkR5ZqqGmvyqF0FVyhYdPzFZ3SpJibbfqHYqnQCShJl6dHx4H+zinJ3b4NtuilheoHfmqkPMWuCrnVmjJH4Uc+RLfoSoi9n5AVOGFXPvJVrl+Gq1M1s6z5NOXd0r9BNGn47Nw1Rh9mrDGpeW8StXs5t4vjjmQzvlPRif6SjnNkUNt/nnSuOFaj6ROaiYshvmErriPmpMrt7pfplJBQnuDj8G+J8jY9r6UoE0p+K1+FRk3MhBj3GIZCy39/ttsuUxG4EjP7K5oC3je+A4W34n1MMCiPICHjHBEsqPAgMBAAECggEAOPnS7lZ/lksfctXHKXmRegNLnhX7QzFgfMYoEYICXx4QWNI1RF4wdsa0zTyUreoIlj5zFmRCg+FGej/pPO5+U9Eal+JtzluUIjXKZhonTZToyRTIZxsP+7eB45me9MIvbjSNUxlMg1FR2WipAHBJFNOnZ5X9xlZAl0UMg6VTgyehYI2lS1VFNrSswkq3GxPHXh96/khqmaK5q3ZcFYvAG8QJFMw1jhnH/92x45WkkSKrSFABI/SOC74ayahRKwn+361vVDsPLRLUKxHg0Ffod0MkVNDVxaxcDr+hwne2kHQbKxQdZWLa03XyEXRXmcSkkA7G3u8+pZNjY7SdHz+qwQKBgQD2+04NBbJXBLjqjPI4aX691WPBhB4We1vPqxG1z3V9QiKRVY0sbq2y01BN4r51tKFYzs4qrqr0v4AEO/+kq8SdYlhevtRGxegBnvH+eC6AM/oIeDGOC2yuZT9T8NskQcLnp+8I7VhG1BHWS9mQVAP7eDG+1XeLTbuNtSpif2Gr5QKBgQCwofBykV6tgSTqu2nGzEGg6EKg50PqGD10MBIf+dXvNblzS4AJo9CJ4tfjegTyv4lOQiQitNyszaRuwprpoqGpKkrqiLzfw8x3CNBPEfl3zlpYsxucTsIMpVAEJR4A+4zkTUwgYgrRve0GfrYnQZAG52EXTH90NxGELsNimvz9YwKBgDi8bCajq19AD3aaID6DRYE4Vu0qe3rwpZukEbJxUO0QVz6Jp5+QYUiWMHlj4BrL/tCW2VeGvnDw2OigG87pQoZhBCnnrn3/kpdkuvSZCR2cUxDFA6U8zJ+XVJ/k0YKXtL1gn5GubDwBFYPj8rusASowZ0UOZqLSnYYlGvJ7jqVdAoGAc/vCQdjHDLNSpHgv+wRAzAH3TmTNqbgFEnhGTozlN9BVWCnph2r0ErbMAGktOqEe7i5sQAX3KdlW8gwDYQsTkFtfGiZzr5OIfVliP6mT4GG13ayuorLspRUgN7iPvSFw4LEJHfKDHDrUm4E05w4cHwxsKrpmrs9CR0PVtLgFC/UCgYEAyeDCzgc+pkaJPpMJuVUD/bRn54PEQsPJKyO4tTzH99q2scycpSYvB0g9yjYsOLbqtjVKBraXJlmQveVS41hPrLx5+cR7M77HjcOnkZ9oyO8i968ou6OyvUCTdjz31tChvC5O8Ks/BN6xuU6hbJROwW/gTbHWP22NzUwUtyNJEDM="
+
+    sput-object v0, Lcom/pyw/plugin/huawei/GlobalParam;->GAME_PRIV_KEY:Ljava/lang/String;
+
+    .line 42
+    const-string v0, "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCdt1rKYUTb9BDU5AmbQxhYaCH0xDTfJUUBiDL6CDu+pFuDfYz6a/F6cANHCGMkK+InBZNjHHXCVUu9IZF/+6JmTvRg7e/GutUenuCTQMLGsDxVxhsDBDBd2k50NlFzs7OjMK15XzIvXogaqvxotuNPsw9OEMx0LOqC6cKnTTKi6ACOFGTXgi6fe8JRKb2s1VCbefZK0RuTGT2R0s9vYJ62votIk3SPfJkCJ2T9jiiu4rsQX9JMTypEbSmeLdf6hlq7Qby1NLrgfHiUMe3zUP7vS+g01UwPPfW4AqT5Ifmi3LR/J7Id/6KftAe4G6ux4+bHyqfIPazGTaF756mLtsEnAgMBAAECggEAOWbM9ACP68/6Okme13QFjdOknC23Iooxgdu81fSeLgYqyoItB822rz3Ka5V5Y+ZW4qXsXTO0Bl09+iGYD7EZi8vrtMWUscs5GvJvQRjeayskYoF+PkxNgDMev7wvTAGY/WmPka+cl9H7jl0yDbiWpeDBTsPdbeEVHz2OG48EwXZFJO4FpKVJbb/QRoFzJmjwHMcJYvQteq/iNIdGbaY2sXSotbC/XXbtOFbhjwCbgEzacqqUVJiO8edxkjPoIvDoaB9qzoL9luYDIjYbZUqcXC9WXOeO7w1zrwukxBFoDYLAnKauFviMCPk7Hiui3Ctkjxo6983nhqiXDAqBw1KUEQKBgQDc7QP3foCrSzMKBnd0yxsW61lJvG2td0eDlKW41OhTzHuYO6T0zQEGuca7UQGhcomaN3IUTTCECYRK32fEcE79L0F8D2jEnvUnI8kEJ116JsXfX6C2bL+QFDm1ujLs+mJfcBgkanAWaHc8acSRf7PYV+lZQziSsoroOrNNUnacVwKBgQC2wVc8IETEqelnNW7DmaFMb4KfpRvSnwWPlzYEr6NzQdjCT1W5kZeq3kozU5saZwtK6ehLn1fLdkXj2jThtx8BBUP1xxCO9gNCFsuPogpOy4Vu1qe4cz/7+MMoNPz35vBAFTv3yVSVJSUQN0Xp6BvA0DfrE3m4E68sBcyCEZb/sQKBgQC1JQHjpK4LxZUL21GHSiHkIQUNGJs1aGAS24cmjiwQydFteTpAHveAdEMmw7z6i9eXw26ehswI92Spn5SN1ShvIJgpCNl2nn+UoBrqdPyIc9I63UYBThmkIXFQOGQZOxP9/QNOmJdfSDi8KF0sj/D+qtaCgkOYxRxwXfE2rS7j8QKBgQCLIL0shNRVc5TAgakFN5vX+LxUlPmNaoptOgxhnOSuBd7ibkswrmnsJrYORQO7Id8y9MdnarMHrc6fG6tOen4b5MpL/XPZoefxFDF78zwtqDq4mqmsffCj/klz/oLmpuUXpBK3HIpL0K9anPmYjJ80Nk+booPzYujkdrWt/34YwQKBgCf09mRPWBuME0IamyYCbdaLOVntguvhgfonb34pQRWZh61ONSXL6I/u2VezSbC9vDFfTvuFhgoP86C48NBGQzBzleepXaAj2rn4M5zQUGZBAeAFQA/tdPBF7GRFvziR6lAm8tXmbfOUKZmuOCcRtYmBXbR5BNToJrwL2Co9lgjW"
+
+    sput-object v0, Lcom/pyw/plugin/huawei/GlobalParam;->PAY_RSA_PRIVATE:Ljava/lang/String;
+
+    .line 93
+    const-string v0, ""
+
+    sput-object v0, Lcom/pyw/plugin/huawei/GlobalParam;->PLAYID:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
