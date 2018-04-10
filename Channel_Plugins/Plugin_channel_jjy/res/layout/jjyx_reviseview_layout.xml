@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9E9E9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FE690F">
+
+        <RelativeLayout
+            android:id="@+id/rl_revise_guanbi_jjyx"
+            android:paddingLeft="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_guanbi_jjyx"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textSize="19dp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginLeft="16dp"
+                android:id="@+id/et_old_jjyx"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="请输入旧密码"
+                android:textSize="15dp"
+                android:textColorHint="#ababab"
+                android:textColor="#000000"
+                android:background="@null"/>
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="16dp"
+                android:id="@+id/iv_clear_jjyx"
+                android:src="@drawable/ic_quanshan_jjyx"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E9E9E9" />
+
+        <!--新密码-->
+        <LinearLayout
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <EditText
+                android:layout_marginLeft="16dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textColorHint="#ababab"
+                android:textColor="#000000"
+                android:background="@null"
+                android:layout_weight="1"
+                android:hint="请输入新密码(6-20个字符组合)"
+                android:id="@+id/et_new_jjyx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:layout_marginRight="16dp"
+                android:id="@+id/iv_openpassword_jjyx"
+                android:src="@drawable/jjyx_mima_selector"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/jjyx_button_gologin"
+        android:textColor="#ffffff"
+        android:id="@+id/bt_commit_jjyx"
+        android:text="立即修改"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+</LinearLayout>

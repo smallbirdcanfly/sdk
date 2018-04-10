@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="gmsdk.games.theme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/gmsdk_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="gmsdk_transparent" parent="gmsdk.games.theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

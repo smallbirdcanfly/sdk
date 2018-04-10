@@ -1,0 +1,12 @@
+{
+    "info": {
+        "channel_id": "72",
+        "game_key": "7fdd424a",
+        "department_code":"1"
+    },
+    "channels": [
+		{
+        	"name": "bzhy"
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_sdk_shape_bg_round"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/game_sdk_dialog_title_back"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_dismiss"
+        style="@style/game_sdk_dialog_title_dismiss"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/game_sdk_dialog_tile_text"
+        android:text="@string/game_sdk_win_login_fastregister" />
+
+    <LinearLayout
+        android:id="@+id/ll_area"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_sdk_dialog_weight_height"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/game_sdk_shape_bg_input"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/game_sdk_input_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_area_list"
+            style="@style/game_sdk_edit_text_icon_spinner"
+            android:layout_alignTop="@+id/ll_area"
+            android:layout_toRightOf="@+id/ll_area"
+            android:background="@drawable/game_sdk_accountlist" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_tel"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_alignTop="@+id/ll_area"
+        android:layout_marginRight="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_toRightOf="@+id/ll_area"
+        android:background="@drawable/game_sdk_shape_bg_input"
+        android:hint="@string/game_sdk_win_account_inpphone"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/et_identifying_code"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_alignTop="@+id/btn_send_code"
+        android:layout_below="@+id/ll_area"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@+id/btn_send_code"
+        android:background="@drawable/game_sdk_shape_bg_input"
+        android:hint="@string/game_sdk_win_account_inpcode"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/btn_send_code"
+        style="@style/game_sdk_dialog_btn"
+        android:layout_width="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_area"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_top"
+        android:text="@string/game_sdk_win_account_getcode" />
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_below="@+id/btn_send_code"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginRight="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_top"
+        android:background="@drawable/game_sdk_shape_bg_input"
+        android:hint="@string/game_sdk_win_account_inppass"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/game_sdk_dialog_btn"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_top"
+        android:text="@string/game_sdk_win_register_register" />
+
+    <ListView
+        android:id="@+id/lv_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/ll_area"
+        android:layout_alignRight="@+id/ll_area"
+        android:layout_below="@+id/ll_area"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</RelativeLayout>

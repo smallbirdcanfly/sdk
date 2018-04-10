@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+    
+    <include layout="@layout/ttw_cz_navigation"
+             android:id="@+id/ic_top"
+        />
+     <View
+        android:id="@+id/charge_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/ttw_edit_two_bg"
+        android:layout_below="@id/ic_top"
+        />
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="90dip"
+       android:gravity="center"
+       android:layout_below="@id/charge_view"
+       android:layout_marginTop="40dip"
+       android:orientation="vertical" >
+       <TableLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <TableRow 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               >
+             <TextView 
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="right"
+               android:textSize="18dip"
+               android:textColor="@color/orange_2"
+               android:text="客服  Q Q："
+              />
+             <TextView 
+               android:id="@+id/tv_service_qq"
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textSize="18dip"
+                 android:textColor="@color/orange_2"
+               android:text=""
+              />
+           </TableRow>
+
+           <TableRow 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               >
+            <TextView 
+              android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:gravity="right"
+              android:layout_weight="1"
+                android:textColor="@color/orange_2"
+              android:textSize="18dip"
+              android:text="客服热线："
+              /> 
+             <TextView 
+               android:id="@+id/tv_service_tel"
+               android:layout_width="0dip"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textSize="18dip"
+                 android:textColor="@color/orange_2"
+               android:text=""
+              />
+           </TableRow>
+       </TableLayout>
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wancms_service"
+        android:layout_centerInParent="true"/>
+   </RelativeLayout>

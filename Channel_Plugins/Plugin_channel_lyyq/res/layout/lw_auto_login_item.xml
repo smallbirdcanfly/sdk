@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:id="@+id/item_layout"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+     >
+
+    <TextView
+        android:id="@+id/account_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_content_tv"
+        android:layout_alignBottom="@+id/item_content_tv"
+        android:layout_marginRight="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <ToggleButton
+        android:id="@+id/set_auto_login_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textOff=""  
+        android:textOn=""
+        android:background="@drawable/lw_toggle_selector"
+        />
+
+    <ImageView
+        android:id="@+id/item_icon_ig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+       	android:contentDescription="@string/lw_img_content_description"
+        android:src="@drawable/lw_auto_login" />
+
+    <TextView
+        android:id="@+id/item_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/item_icon_ig"
+        android:text="@string/lw_auto_login"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

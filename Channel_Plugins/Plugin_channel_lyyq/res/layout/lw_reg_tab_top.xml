@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:minWidth="30dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:singleLine="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/lw_tab_top_selector"
+    android:textSize="@dimen/lw_tab_top_fontsize" />

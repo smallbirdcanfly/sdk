@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlDBNumParentLayot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlBDNumLayout"
+        android:layout_width="300dp"
+        android:layout_height="290dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/round_bg"
+        android:paddingBottom="10dip"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tvBDNumTopText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="你还未绑定手机"
+            android:textColor="#ed6741" />
+
+        <RelativeLayout
+            android:id="@+id/rlInputPhoneNumLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/tvBDNumTopText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mox_mobile_bg" >
+
+            <EditText
+                android:id="@+id/edt_phoneNum_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:hint="请输入手机号"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:paddingRight="50dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#818181"
+                android:textColorHint="#c8c8c8"
+                android:textSize="15dip" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_getverCode_BD"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignRight="@id/rlInputPhoneNumLayout"
+            android:layout_below="@id/tvBDNumTopText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mox_login_in"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlInputVerificationCodeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/rlInputPhoneNumLayout"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/mox_vercode_bg" >
+
+            <EditText
+                android:id="@+id/edt_verificationCode_BD"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="请输入验证码"
+                android:paddingRight="50dip"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:textColor="#818181"
+                android:textColorHint="#c8c8c8"
+                android:textSize="15dip" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_BDMakeSure"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/rlInputVerificationCodeLayout"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/mox_login_in"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/tv_cancel_BD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_BDMakeSure"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="下次再说"
+            android:textColor="#b2b1af" />
+    </RelativeLayout>
+
+</RelativeLayout>

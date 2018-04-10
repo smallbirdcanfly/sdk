@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xy_corner_background_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/xy_corner_background_above">
+
+        <ImageView
+            android:id="@+id/pj_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xy_background_web_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pj_image_title_logo" />
+
+        <Button
+            android:id="@+id/xy_btn_onekey_register"
+            android:layout_width="66dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/xy_button_bg"
+            android:text="一键注册"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/pj_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/pj_login_username_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/pj_background_input"
+                android:drawableLeft="@drawable/xy_image_icon_username"
+                android:drawablePadding="10dp"
+                android:hint="用户名:6-16位字、数字"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/pj_login_password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/pj_background_input"
+                android:drawableLeft="@drawable/xy_image_icon_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="密码:6-30位字、数字"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/pj_reg_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xy_button_bg"
+                android:text="注册"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成注册即表示同意" />
+
+                <TextView
+                    android:id="@+id/pj_reg_licence_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:text="《萝莉玩用户协议》"
+                    android:textColor="@color/main_background_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

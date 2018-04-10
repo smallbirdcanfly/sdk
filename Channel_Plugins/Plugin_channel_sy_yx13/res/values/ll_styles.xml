@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ll_dialog_login" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/ll_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ll_dialog_login_tencent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/ll_transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="ll_Activity_Transparent" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/ll_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="ll_Activity_TransparentNotFullscreen" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/ll_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="ll_dialog_waiting" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/ll_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 自定义不确定圆形进度条 -->
+
+    <style name="ll_progress_loading" parent="android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/ll_progress</item>
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">72dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">72dp</item>
+    </style>
+
+    <!-- 全屏dialog样式 左右插入 -->
+    <style name="ll_full_screen_dialog">
+        <item name="android:windowBackground">@color/ll_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ll_floating_menu_anim_style_left" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ll_floating_menu_anim_show_left</item>
+        <item name="android:windowExitAnimation">@anim/ll_floating_menu_anim_hide_left</item>
+    </style>
+
+    <style name="ll_floating_menu_anim_style_right" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ll_floating_menu_anim_show_right</item>
+        <item name="android:windowExitAnimation">@anim/ll_floating_menu_anim_hide_right</item>
+    </style>
+</resources>

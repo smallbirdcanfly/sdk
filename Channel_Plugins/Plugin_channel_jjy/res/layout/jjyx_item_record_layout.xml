@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单金额:"
+            android:textSize="13dp"
+            android:textColor="#484848"/>
+        <TextView
+            android:id="@+id/tv_order_amount_jjyx"
+            android:layout_toRightOf="@+id/textview2"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13dp"
+            android:textColor="#ff7800"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值成功"
+            android:textSize="13dp"
+            android:textColor="#8b8b8b"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式:"
+            android:textSize="13dp"
+            android:textColor="#484848"/>
+        <TextView
+            android:id="@+id/tv_order_paytye_jjyx"
+            android:layout_toRightOf="@+id/textview3"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13dp"
+            android:textColor="#484848"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付时间:"
+            android:textSize="13dp"
+            android:textColor="#484848"/>
+        <TextView
+            android:id="@+id/tv_order_time_jjyx"
+            android:layout_toRightOf="@+id/textview4"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13dp"
+            android:textColor="#484848"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号:"
+            android:textSize="13dp"
+            android:textColor="#484848"/>
+        <TextView
+            android:id="@+id/tv_order_num_jjyx"
+            android:layout_toRightOf="@+id/textview1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13dp"
+            android:textColor="#484848"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

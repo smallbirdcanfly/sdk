@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/game_sdk_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/game_sdk_dialog_title_back"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_dismiss"
+        style="@style/game_sdk_dialog_title_dismiss"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/game_sdk_dialog_tile_text" />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_top"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <com.yyjia.sdk.widget.ClearEditText
+        android:id="@+id/et_user_name"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_below="@+id/tv_notice"
+        android:layout_marginTop="8dp" />
+
+    <com.yyjia.sdk.widget.ClearEditText
+        android:id="@+id/et_password"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_below="@+id/et_user_name"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_top"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/game_sdk_dialog_btn"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>

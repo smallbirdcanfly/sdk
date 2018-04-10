@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/lw_reg_content_layout"
+        android:layout_width="@dimen/login_layout_width_size"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lw_login_reg_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lw_register_tv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/lw_login_enter_game_bt"
+            android:layout_marginBottom="25dp"
+            android:gravity="right|top"
+            android:linksClickable="true"
+            android:textColor="@color/lw_link_tv_selector"
+            android:textSize="@dimen/lw_reg_tv_font_size" 
+            android:text="@string/lw_one_key_register"
+            />
+
+        <Button
+            android:id="@+id/lw_login_enter_game_bt"
+            android:layout_width="@dimen/account_win_width_size"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lw_register_tv"
+            android:layout_alignLeft="@+id/lw_login_pass_et"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/lw_login_bt_selector"
+            android:text="@string/lw_enter_game" />
+
+        <EditText
+            android:id="@+id/lw_login_pass_et"
+            android:layout_width="@dimen/account_win_width_size"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lw_login_enter_game_bt"
+            android:layout_alignLeft="@+id/lw_login_account_et"
+            android:layout_marginBottom="@dimen/lw_margin"
+            android:background="@drawable/lw_input_buttom_bg"
+            android:ems="10"
+            android:hint="@string/lw_input_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/lw_input_padding_left"
+            android:textColor="@color/lw_input_font_color"
+            android:textColorHint="@color/lw_white"
+            android:textSize="@dimen/lw_text_font_size" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/lw_login_account_et"
+            android:layout_width="@dimen/account_win_width_size"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lw_login_pass_et"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lw_input_top_bg"
+            android:ems="10"
+            android:hint="@string/lw_input_account"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/lw_input_padding_left"
+            android:textColor="@color/lw_input_font_color"
+            android:textColorHint="@color/lw_white"
+            android:textSize="@dimen/lw_text_font_size" />
+
+        <TextView
+            android:id="@+id/lw_forget_pwd_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lw_login_pass_et"
+            android:layout_alignBottom="@+id/lw_login_pass_et"
+            android:layout_alignRight="@+id/lw_login_pass_et"
+            android:layout_marginRight="@dimen/lw_margin_right"
+            android:textColor="@color/lw_input_font_color"
+            android:text="@string/forget_pew"
+             />
+
+        <RelativeLayout
+            android:id="@+id/lw_login_reg_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lw_show_account_ig"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/lw_margin"
+            >
+
+            <ImageView
+                android:id="@+id/lw_exit_logo_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:contentDescription="@string/pay"
+                android:src="@drawable/lw_logo" />
+
+            <TextView
+                android:id="@+id/lw_login_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lw_exit_logo_ig"
+                android:text="@string/lw_no_login"
+                android:textColor="@color/lw_61_account_login"
+                android:textSize="27sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/lw_show_account_ig"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/lw_login_pass_et"
+            android:layout_alignRight="@+id/lw_login_pass_et"
+            android:layout_alignTop="@+id/lw_login_account_et"
+            android:contentDescription="@string/pay"
+            android:scaleType="center"
+            android:src="@drawable/lw_input_icon_arrow" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

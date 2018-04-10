@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="设置角色属性" />
+
+        <Button
+            android:id="@+id/btn03"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="充值1元" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:hint="输入充值金额"
+                android:inputType="number"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="充值" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

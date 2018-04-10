@@ -1,0 +1,12 @@
+{
+    "info": {
+        "channel_id": "76",
+        "game_key":"1ab4bf0d",
+        "department_code":"1"
+    },
+    "channels": [
+    	{
+        	"name": "HUOSDK"
+        }
+    ]
+}

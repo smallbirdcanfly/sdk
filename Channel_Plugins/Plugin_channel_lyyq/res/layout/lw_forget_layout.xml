@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/lw_forget_title"
+            layout="@layout/lw_title_layout" />
+
+        <EditText
+            android:id="@+id/lw_forget_pwd_account_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lw_forget_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:paddingLeft="@dimen/lw_input_padding_left"
+            android:background="@drawable/lw_forget_pass_normal"
+            android:hint="@string/please_input_account" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/lw_forget_pwd_new_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lw_forget_pwd_ans_et"
+            android:layout_alignRight="@+id/lw_forget_pwd_ans_et"
+            android:layout_below="@+id/lw_forget_pwd_ans_et"
+            android:layout_marginTop="@dimen/lw_margin_top2"
+            android:background="@drawable/lw_forget_pass_normal"
+            android:ems="10"
+            android:paddingLeft="@dimen/lw_input_padding_left"
+            android:hint="@string/please_input_new_pwd" />
+
+        <Button
+            android:id="@+id/lw_forget_pwd_confirm_submit_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lw_forget_pwd_new_pwd_et"
+            android:layout_alignRight="@+id/lw_forget_pwd_new_pwd_et"
+            android:layout_below="@+id/lw_forget_pwd_new_pwd_et"
+            android:background="@drawable/lw_login_bt_selector"
+            android:layout_marginTop="@dimen/lw_margin_top2"
+            android:text="@string/confirm_commit"
+            android:textSize="@dimen/lw_button_font_size"
+             />
+
+        <Spinner
+            android:id="@+id/lw_forget_pwd_select_q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lw_margin_top2"
+            android:layout_alignLeft="@+id/lw_forget_pwd_account_et"
+            android:layout_below="@+id/lw_forget_pwd_account_et"
+            android:background="@drawable/lw_spinner_top"
+            android:paddingLeft="@dimen/lw_input_padding_left"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/lw_forget_pwd_ans_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lw_forget_pwd_select_q"
+            android:layout_below="@+id/lw_forget_pwd_select_q"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-2dp"
+            android:ems="10"
+            android:background="@drawable/lw_forget_pass_input_buttom"
+            android:paddingLeft="@dimen/lw_input_padding_left"
+            android:hint="@string/please_input_question_ans" />
+
+        <TextView
+            android:id="@+id/lw_gift_get_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lw_forget_pwd_confirm_submit_bt"
+            android:layout_alignRight="@+id/lw_forget_pwd_confirm_submit_bt"
+            android:layout_below="@+id/lw_forget_pwd_confirm_submit_bt"
+            android:autoLink="phone"
+            android:text="@string/lw_service_phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="@dimen/lw_margin_top3"
+            android:textColor="@color/lw_red" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ipay_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_login_ui_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ipay_height_40">
+
+            <TextView
+                android:id="@+id/tv_login_ui_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="选择支付渠道"
+                android:textColor="@color/ipay_color_value_6"
+                android:textSize="@dimen/ipay_text_size_15" />
+
+            <ImageView
+                android:id="@+id/iv_login_ui_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/ipay_margin_15"
+                android:src="@drawable/ipay_dialog_close" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_login_ui_line_0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ipay_divid_line_h"
+            android:layout_below="@+id/rl_login_ui_title"
+            android:background="@color/ipay_color_value_3" />
+        
+        <RelativeLayout
+            android:id="@+id/rl_login_ui_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_login_ui_line_0"
+            android:layout_marginTop="@dimen/ipay_margin_15"
+            android:gravity="center">
+			<TextView android:id="@+id/tv_msgname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center" android:text="20000元宝" android:textColor="@color/ipay_color_value_6" android:textSize="@dimen/ipay_margin_10" />
+			<TextView android:id="@+id/tv_msgprice" android:layout_marginTop="@dimen/ipay_margin_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center" android:text="￥200" android:textColor="@color/ipay_color_value_6" android:textSize="@dimen/ipay_margin_10" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_login_ui_line_0"
+            android:layout_marginTop="60dp">
+
+            <ImageView android:id="@+id/alipay"
+                	   android:paddingBottom="@dimen/ipay_margin_15"
+                	   android:paddingLeft="@dimen/ipay_margin_35" 
+                	   android:layout_width="wrap_content" 
+                	   android:layout_height="wrap_content" 
+                	   android:src="@drawable/recharge_ali" />
+            <ImageView android:id="@+id/wechat"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_alignParentRight="true"
+                		android:paddingBottom="@dimen/ipay_margin_15"
+                		android:paddingRight="@dimen/ipay_margin_35"
+                		android:src="@drawable/recharge_wechat" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

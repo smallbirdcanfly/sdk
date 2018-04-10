@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gmsdk_base_background">#FFefefef</color>
+    <color name="gmsdk_error_font">#FFFF0000</color>
+    <color name="gmsdk_font">#FF666666</color>
+    <color name="gmsdk_white">#FFffffff</color>
+    <color name="gmsdk_link_font">#FF0000FF</color>
+    <color name="gmsdk_line">#FF000000</color>
+    <color name="gmsdk_font3">#FF333333</color>
+    <color name="gmsdk_font2">#FF666666</color>
+    <color name="gmsdk_line2">#FFCCCCCC</color>
+    <color name="gmsdk_base_color">#FF333333</color>
+    <color name="gmsdk_focus_color">#FF515151</color>
+    <color name="gmsdk_transparent">#00000000</color>
+    <color name="gmsdk_buy">#FFFF6633</color>
+    <color name="gmsdk_cover">#7f000000</color>
+    <color name="gmsdk_font_secondary">#FF999999</color>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/ll_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_title_height"
+            android:paddingLeft="@dimen/ll_login_padding_left_right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="选择登录账号"
+                android:textColor="@color/ll_login_main_title_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_exit"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ll_back_btn_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ll_popup_closed_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ll_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/ll_transparent"
+            android:dividerHeight="5dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="@dimen/ll_login_padding_left_right"
+            android:paddingRight="@dimen/ll_login_padding_left_right" />
+    </LinearLayout>
+
+</RelativeLayout>

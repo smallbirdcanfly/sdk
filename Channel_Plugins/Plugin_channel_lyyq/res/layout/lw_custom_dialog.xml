@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/lw_custom_dialog_width_height_size"
+    android:background="@android:color/transparent"
+    android:minHeight="@dimen/lw_custom_dialog_width_height_size"
+    android:minWidth="@dimen/lw_custom_dialog_width_height_size"
+    android:layout_gravity="center"
+    android:layout_height="@dimen/lw_custom_dialog_width_height_size" >
+
+    <ProgressBar
+        android:id="@+id/lw_loading_pb"
+        style="@style/mProgress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/lw_progress_indeterminate"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

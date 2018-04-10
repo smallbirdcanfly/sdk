@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".activity.KxwRechargeActivity">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/toolbarColor">
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_logo"
+	        android:layout_width="90dp"
+	        android:layout_height="28dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/kxw_logo3"/>
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_delete"
+	        android:layout_width="@dimen/twenty_dip"
+	        android:layout_height="@dimen/twenty_dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="16dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_delete2"
+	        android:clickable="true"/>
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/kxw_round"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp">
+
+        <RelativeLayout
+            android:id="@+id/kxw_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/kxw_iv_game"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/twenty_dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kxw_game"/>
+
+            <TextView
+                android:id="@+id/kxw_tv_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/game_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/kxw_iv_game"
+                android:layout_marginLeft="@dimen/ten_dip"/>
+
+            <TextView
+                android:id="@+id/kxw_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/disacceptColor"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kxw_balance"
+                android:layout_toLeftOf="@id/kxw_tv_money"
+                android:layout_marginRight="6dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/kxw_tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray"
+            android:layout_below="@id/kxw_rl_top"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:layout_below="@id/kxw_tv_line">
+
+            <ImageView
+                android:id="@+id/kxw_iv_way"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kxw_alipay"/>
+
+            <TextView
+                android:id="@+id/kxw_tv_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/alipay"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/kxw_iv_way"
+                android:layout_marginLeft="@dimen/ten_dip"/>
+
+            <LinearLayout
+                android:id="@+id/kxw_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:background="@drawable/kxw_bg_change"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/kxw_change_way"/>
+
+                <TextView
+                    android:id="@+id/kxw_tv_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_recharge_way"
+                    android:textColor="@color/disacceptColor"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+        
+        <CheckBox 
+            android:id="@+id/kxw_cb_decode"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="4dp"
+            android:button="@null"
+            android:background="@drawable/kxw_cb_decode"
+            android:checked="false"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_use_decode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用开心豆余额抵扣"
+            android:textColor="@color/textColorGray"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/kxw_cb_decode"
+            android:layout_marginLeft="4dp"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_decode_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/kxw_tv_use_decode"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_part_rate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(开心豆余额将扣除抵扣金额的"
+            android:textColor="@color/textColorGray"
+            android:textSize="10sp"
+            android:layout_below="@id/kxw_tv_use_decode"
+            android:layout_alignLeft="@id/kxw_tv_use_decode"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1D9822"
+            android:textSize="10sp"
+            android:layout_below="@id/kxw_tv_use_decode"
+            android:layout_toRightOf="@id/kxw_tv_part_rate1"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_part_rate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作为手续费)"
+            android:textColor="@color/textColorGray"
+            android:textSize="10sp"
+            android:layout_below="@id/kxw_tv_use_decode"
+            android:layout_toRightOf="@id/kxw_tv_rate"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应付金额 :"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:layout_below="@id/kxw_tv_part_rate1"
+            android:layout_alignLeft="@id/kxw_cb_decode"
+            android:layout_marginTop="10dp"/>
+        
+        <TextView 
+            android:id="@+id/kxw_tv_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/kxw_tv_part_rate1"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kxw_btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/kxw_button"
+        android:text="立即支付"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

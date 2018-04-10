@@ -1,0 +1,12 @@
+{
+    "info": {
+        "channel_id": "111",
+        "game_key": "7d9240a5",
+        "department_code":"1"
+    },
+    "channels": [
+		{
+        	"name": "jsqq"
+        }
+    ]
+}

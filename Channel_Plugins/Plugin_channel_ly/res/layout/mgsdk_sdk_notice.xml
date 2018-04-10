@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="fill_parent"
+        android:layout_height="286dip"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mgsdk_sdk_edit_two_bg"
+        android:paddingBottom="10dip" >
+
+        <ImageButton
+            android:id="@+id/ibtn_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mgsdk_sdk_img_selector2" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_notice"
+            android:layout_width="match_parent"
+            android:layout_height="226dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#efefef"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_title_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="摩格新发亚特兰帝斯手游"
+                    android:textColor="#51b4c1"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_date_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="2016-05-08"
+                android:textColor="#666666" />
+
+            <WebView
+                android:id="@+id/tv_content_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/mgsdk_notice_logo" />
+
+</RelativeLayout>

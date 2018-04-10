@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    package="com.wancms.sdk"
+    android:versionCode="2017032822"
+    android:versionName="1.5">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission  android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+ 	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
+  
+      <!-- 微信的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODE_WORLD_READABLE" />
+    <!-- 照相的权限 -->
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.hardware.camera.autofocus" />
+	
+	<!-- 读取短信验证码	可选 -->
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	
+	<!-- 录像需要的权限 -->
+	<uses-permission android:name="android.permission.RECORD_VIDEO"/>
+	<!-- 开启悬浮窗口需要的权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wancms_ic_launcher"
+        android:theme="@style/AppTheme" >
+        
+        <activity 
+             android:name="com.wancms.sdk.ui.LoginActivity"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+             android:launchMode="singleTask"
+             android:screenOrientation="portrait"
+             android:configChanges="orientation|keyboardHidden|screenSize">
+            </activity>
+            
+       <!-- 忘记密码php页面 -->
+       <activity 
+         android:name="com.wancms.sdk.floatwindow.FloatWebActivity"
+         android:screenOrientation="sensor"
+         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+         android:configChanges="orientation|keyboardHidden|screenSize">
+       </activity>
+            
+        <activity 
+         android:name="com.wancms.sdk.ui.ChargeActivity"
+         android:theme="@android:style/Theme.Light.NoTitleBar"
+         android:screenOrientation="sensor"
+         android:launchMode="singleTask"
+         android:configChanges="orientation|keyboardHidden|screenSize"
+         /> 
+         
+         <service android:name="com.wancms.sdk.WancmsSDKAppService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+            </intent-filter>
+        </service>
+       <activity
+	       android:name="com.tencent.tauth.AuthActivity"
+	       android:noHistory="true"
+	       android:launchMode="singleTask" >
+		    <intent-filter>
+		        <action   android:name="android.intent.action.VIEW" />
+		       	<category android:name="android.intent.category.DEFAULT" />
+		       	<category android:name="android.intent.category.BROWSABLE" />
+		        <data     android:scheme=""/>
+		    </intent-filter>
+       </activity>
+       
+       <activity 
+	       android:name="com.tencent.connect.common.AssistActivity"
+           android:theme="@android:style/Theme.Translucent.NoTitleBar"
+           android:configChanges="orientation|keyboardHidden|screenSize" 
+       />
+       <!-- 正式版和测试版相同 -->
+       <meta-data android:name="WANCMS_APPID" android:value="9" />
+       <meta-data android:name="WANCMS_GAMEID" android:value="22" />
+       <meta-data android:name="WANCMS_AGENT" android:value="cps001" />
+       <meta-data android:name="WX_APP_ID" android:value="wx53a93f0469fba12d" />
+       <meta-data android:name="WX_APP_SECRET" android:value="685c8f9f75829bbf76cd56f4a0a8dc4e" />
+       <activity
+				android:name="com.alipay.sdk.auth.AuthActivity"
+				android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+				android:exported="false"
+				android:screenOrientation="behind" >
+	  </activity>  
+	  
+	    <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.wancms.sdk.ui.WeChatPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--启动语句需要注释调-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <data
+                    android:host="MainActivity"
+                    android:scheme="com.wancms.sdk"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxb6101c676051963a"/>
+            </intent-filter>
+        </activity>
+
+        <!--微信登录回调界面-->
+        <activity
+            android:name="com.wancms.sdk.wxapi.WXEntryActivity"
+            android:exported="true">
+        </activity>
+
+        <!--微信支付回调界面-->
+        <activity
+            android:name="com.wancms.sdk.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <receiver
+            android:name="com.wancms.sdk.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        
+        
+        <activity
+            android:name="com.wancms.sdk.ui.WebPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        
+            <activity
+            android:name="com.wancms.sdk.ui.SFTWebPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        
+         <activity
+            android:name="com.wancms.sdk.ui.XQTWebPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+           android:name="com.shengpay.express.smc.ExpressSmcClientActivity"
+           android:screenOrientation="behind"
+           android:configChanges="keyboardHidden|orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+       </activity>
+           
+        <activity
+            android:name="com.wancms.sdk.ui.PhoneBindingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

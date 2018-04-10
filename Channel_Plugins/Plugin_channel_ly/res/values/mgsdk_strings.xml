@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mgsdk_btn_charge_green">#00b600</color>
+    <color name="mgsdk_btn_charge_gray">#999999</color>
+    <color name="mgsdk_aqua">#48AC4E</color>
+    <string name="mgsdk_view_tag">view_tag</string>
+    <string name="mgsdk_app_name">摩格游戏</string>
+    <string name="mgsdk_btn_user">用户</string>
+    <string name="mgsdk_btn_gift">礼包</string>
+    <string name="mgsdk_btn_server">客服</string>
+    <string name="mgsdk_btn_bbs">论坛</string>
+    <string name="mgsdk_btn_userout">注销</string>
+    <string name="mgsdk_title_user">用户中心</string>
+    <string name="mgsdk_tv_gift">礼包</string>
+
+</resources>

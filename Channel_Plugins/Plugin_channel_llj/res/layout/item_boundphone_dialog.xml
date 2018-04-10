@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/item_boundphone"
+        android:layout_width="@dimen/y638"
+        android:layout_height="@dimen/y473"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_userl_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y74">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/y36"
+                android:text="@string/wan669_bind_bingphone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/y33"/>
+
+            <ImageView
+                android:id="@+id/item_image_close"
+                android:layout_width="@dimen/y33"
+                android:layout_height="@dimen/y33"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/y20"
+                android:src="@drawable/wan_close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/y26"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3f3533"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y196"
+            android:layout_marginLeft="@dimen/y17"
+            android:layout_marginRight="@dimen/y17"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y88"
+                        android:background="@drawable/shape_oval_edit_width">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/y36"
+                            android:text="+86"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/y30" />
+
+                        <EditText
+                            android:id="@+id/item_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/y35"
+                            android:textColor="@color/wan669_input_edit"
+                            android:textColorHint="@color/wan669_hint_edit"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/wan669_login_phone_account_hint"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textSize="@dimen/y30" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y88"
+                        android:layout_marginTop="-2dp"
+                        android:background="@drawable/shape_oval_edit_width2"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/bind_edit_account"
+                            android:layout_width="@dimen/y500"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@color/WanSDK_transparent"
+                            android:textColor="@color/wan669_input_edit"
+                            android:textColorHint="@color/wan669_hint_edit"
+                            android:hint="@string/wan669_bind_inputcode"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:paddingLeft="@dimen/y32"
+                            android:textSize="@dimen/y30" />
+
+                        <Button
+                            android:id="@+id/sdk_bind_code_btn"
+                            android:layout_width="@dimen/y180"
+                            android:layout_height="@dimen/y54"
+                            android:layout_marginRight="@dimen/y20"
+                            android:layout_marginTop="@dimen/y21"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/shape_forget_bg"
+                            android:text="@string/wan669_bind_getcode"
+                            android:textColor="@color/wan669_forget_btn"
+                            android:textSize="@dimen/y30" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/item_btnBind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y86"
+            android:layout_marginBottom="@dimen/y36"
+            android:layout_marginLeft="@dimen/y21"
+            android:layout_marginRight="@dimen/y19"
+            android:layout_marginTop="@dimen/y27"
+            android:background="@drawable/selector_button_login"
+            android:text="绑定"
+            android:textColor="@color/wan669_exit_btn_width"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+</RelativeLayout>

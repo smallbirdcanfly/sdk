@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="ll_title_height">50dp</dimen>
+    <dimen name="ll_edit_text_size">14sp</dimen>
+    <dimen name="ll_title_btn_text_size">14sp</dimen>
+    <dimen name="ll_login_padding_left_right">15dp</dimen>
+    <dimen name="ll_text_margin_left_right">10dp</dimen>
+
+</resources>

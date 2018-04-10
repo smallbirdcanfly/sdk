@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FE690F">
+
+        <RelativeLayout
+            android:id="@+id/rl_guanbi"
+            android:paddingLeft="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_guanbi_jjyx"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值记录"
+            android:textSize="19dp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.gamesdk.jjyx.view.xlistview.XListView
+            android:id="@+id/lv_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#E9E9E9"
+            android:dividerHeight="0.5dp">
+
+        </com.gamesdk.jjyx.view.xlistview.XListView>
+
+        <ViewStub
+            android:id="@+id/viewstub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/jjyx_content_load_result" />
+
+        <TextView
+            android:id="@+id/tv_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无充值记录"
+            android:textColor="#8a000000"
+            android:textSize="14dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

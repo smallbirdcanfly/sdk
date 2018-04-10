@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mch_cricle_10dp_bg_white"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+         >
+        <Button
+            android:id="@+id/btn_mc_platform_registertologin"
+            android:visibility="visible"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mch_back_left60"
+            />
+        <ImageView
+            android:id="@+id/mch_iv_log"
+            android:layout_width="130dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mch_logo_400x100"
+            android:orientation="vertical" >
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/mch_platform_login_account_4040" />
+
+        <EditText
+            android:id="@+id/edt_mc_platform_register_account"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#00000000"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:singleLine="true"
+            android:textColor="#FF9D9D9E"
+            android:textSize="15sp"></EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/mch_platform_login_password_4040" />
+
+        <EditText
+            android:id="@+id/edt_mc_platform_register_msg"
+            android:layout_width="wrap_content"
+            android:layout_weight="6"
+            android:layout_height="20dp"
+            android:background="#00000000"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:singleLine="true"
+            android:textColor="#FF9D9D9E"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/msg_mm"
+            android:layout_width="60sp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/mc_login_reg_phone_num"
+            android:text="发送验证码"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/mc_platform_login_lock" />
+
+        <EditText
+            android:id="@+id/edt_mc_platform_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#00000000"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="请输入密码(6-15位)"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#FF9D9D9E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:src="@drawable/mch_platform_login_account_4040" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_mc_platform_register_account"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="#00000000"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="请输入手机号码"-->
+    <!--android:textColorHint="#FF9D9D9E"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="#FF9D9D9E"-->
+    <!--android:textSize="15sp" >-->
+
+    <!--<requestFocus />-->
+    <!--</EditText>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#DCDCDC" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:src="@drawable/mch_platform_login_password_4040" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_mc_platform_register_msg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_weight="6"-->
+    <!--android:background="@null"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="请输入验证码"-->
+    <!--android:textColorHint="#FF9D9D9E"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="#FF9D9D9E"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/msg_mm"-->
+    <!--android:layout_width="60sp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="7dp"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:background="@drawable/mc_login_reg_phone_num"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#fff"-->
+    <!--android:text="发送验证码" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#DCDCDC" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:src="@drawable/mc_platform_login_lock" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/edt_mc_platform_register_password"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="@null"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="请输入密码"-->
+    <!--android:textColorHint="#FF9D9D9E"-->
+    <!--android:password="true"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="#FF9D9D9E"-->
+    <!--android:textSize="15sp" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#DCDCDC" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/btn_mc_read"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_mc_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_mc_read"
+            android:text="《注册许可协议》"
+            android:textColor="#6bddd6"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_mc_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_mc_read"
+            android:text="我已阅读"
+            android:textColor="#FF9D9D9E"
+            android:textSize="12sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_mc_read"-->
+        <!--android:layout_width="16dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/txt_mc_read"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:text="" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_mc_agreement"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toRightOf="@+id/txt_mc_read"-->
+        <!--android:text="《改成对应联运注册许可协议》"-->
+        <!--android:textColor="#6bddd6"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_mc_read"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toRightOf="@+id/btn_mc_read"-->
+        <!--android:text="我已阅读"-->
+        <!--android:textColor="#FF9D9D9E"-->
+        <!--android:textSize="12sp" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_mc_platform_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mch_button_selector_green"
+            android:text="完成注册"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/Button01"
+            android:layout_toRightOf="@+id/Button01"
+            android:background="#00000000"
+            android:text="切换到普通账号注册"
+            android:textColor="#6bddd6"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:text="您可以用"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/shabia"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:text="返回登录> "
+            android:textColor="#FFB400"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_mc_platform_register"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/mch_button_selector_green"-->
+    <!--android:text="完成注册"-->
+    <!-- -->
+    <!--android:textColor="#fff"-->
+    <!--android:textSize="20sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:gravity="center_vertical|center_horizontal" >-->
+
+    <!--<Button-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/Button01"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:background="#00000000"-->
+    <!--android:text="您可以用"-->
+    <!--android:textColor="#fff"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_reg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="#00000000"-->
+    <!--android:text="切换到普通账号注册"-->
+    <!--android:textColor="#6bddd6"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<Button-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/shabi"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="#00000000"-->
+    <!--android:text="返回登录> "-->
+    <!--android:textColor="#FFB400"-->
+    <!--android:textSize="12sp" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

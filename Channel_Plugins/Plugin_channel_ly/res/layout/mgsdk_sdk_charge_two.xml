@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3c3c3c" >
+
+        <ImageView
+            android:id="@+id/iv_ingame"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/mgsdk_sdk_charge_help" />
+
+        <TextView
+            android:id="@+id/tv_charge_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值中心"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+     <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/mgsdk_float_ic_action_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_pay_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="充值账号 ："
+                    android:textColor="@color/mgsdk_blacks"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_pay_user"
+                    android:text="12345689"
+                    android:textColor="#ff6905"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_pay_user"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="充值金额 ："
+                    android:textColor="@color/mgsdk_blacks"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_pay_money"
+                    android:background="#ff6905"
+                    android:gravity="center"
+                    android:text="200"
+                    android:textColor="@color/mgsdk_white" />
+                
+                                         <TextView
+            android:id="@+id/tv_discounted_price_chargeview"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="实际支付:"
+            android:textSize="12dp"
+            android:layout_below="@+id/tv_money"
+            android:textColor="@color/mgsdk_red" />
+            </RelativeLayout>
+            
+
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mgsdk_gray5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/tv_checkpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="请选择充值方式："
+                    android:textColor="@color/mgsdk_blacks"
+                    android:textSize="18dp" />
+
+                <GridView
+                    android:id="@+id/gv_pay_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_checkpay"
+                    android:background="#ffffff"
+                    android:horizontalSpacing="10dip"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="10dip"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" >
+                </GridView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+
+            <Button
+                android:id="@+id/btn_goto_pay"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#ff6905"
+                android:textSize="18dp" 
+                android:text="立即付款"
+                android:textColor="@color/mgsdk_white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

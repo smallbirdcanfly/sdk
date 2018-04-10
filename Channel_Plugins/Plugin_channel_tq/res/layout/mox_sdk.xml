@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="登录" />
+
+            <EditText
+                android:id="@+id/et_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:hint="输入充值金额"
+                android:maxLength="8"
+                android:numeric="integer"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btn_charger"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="充值" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务器ID" />
+
+                    <EditText
+                        android:id="@+id/server_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="001" />
+
+                    <EditText
+                        android:id="@+id/server_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一区" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="角色" />
+
+                    <EditText
+                        android:id="@+id/role_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="角色ID"
+                        android:text="0001" />
+
+                    <EditText
+                        android:id="@+id/role_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="角色名称"
+                        android:text="阿文" />
+
+                    <EditText
+                        android:id="@+id/role_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="角色级别"
+                        android:text="30" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_set_role_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="设置角色数据" />
+
+            <Button
+                android:id="@+id/btn_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="网页登录支付示例" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_shape_bulletin_top_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="公告"
+            android:textColor="#5f5f5f"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ll_ic_bulletin_main_close"/>
+
+        <View
+            android:id="@+id/view_closeHotSpot"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_bulletinContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:id="@+id/fl_footerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_shape_bulletin_bottom_bg">
+
+        <CheckBox
+            android:id="@+id/cb_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/ll_bulletin_checkbox_selector"
+            android:paddingLeft="5dp"
+            android:text="今日不再显示"
+            android:textColor="#b4b4b4"
+            android:textSize="13sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KxwMessageCodeActivity">
+
+    <Button 
+        android:id="@+id/kxw_btn_change"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:background="@drawable/kxw_btn_round"
+        android:text="切换账号"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/kxw_layout"
+        android:layout_toRightOf="@id/kxw_layout"
+        android:layout_marginBottom="20dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/kxw_layout"
+        android:layout_width="250dp"
+    	android:layout_height="128dp"
+    	android:orientation="vertical"
+    	android:layout_centerInParent="true"
+    	android:background="@drawable/kxw_round">
+    	
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal">
+	        
+	        <TextView 
+	            android:id="@+id/kxw_tv_account"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#FF6600"
+	            android:textSize="13sp"/>
+	        
+	        <TextView 
+	            android:id="@+id/kxw_tv_loading"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="正在登录中..."
+	            android:textColor="#999999"
+	            android:textSize="12sp"/>      
+	    </LinearLayout>
+	
+	    <ProgressBar 
+	        android:id="@+id/kxw_progress_bar"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="16dp"
+	        android:layout_gravity="center_horizontal"/>      
+    </LinearLayout>
+
+</RelativeLayout>

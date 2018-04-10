@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pyw.unitysdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <!-- SNOWFISH SDK 添加SDK需要的use-permision -->
+    <!--add by snowfish-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--end add by snowfish -->
+
+    <!-- SNOWFISH SDK -->
+
+    <application>
+
+<!-- 易接SDK start -->
+        <service
+            android:name="com.snowfish.a.a.s.ABGSvc"
+            android:enabled="true"
+            android:process="com.snowfish.a.a.bg" >
+            <intent-filter>
+                <action android:name="com.snowfish.a.a.s.ABGSvc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.snowfish.customer"
+            android:value="SNOWFISH" >
+        </meta-data>
+        <meta-data
+            android:name="com.snowfish.channel"
+            android:value="SNOWFISH" >
+        </meta-data>
+        <meta-data
+            android:name="com.snowfish.sdk.version"
+            android:value="2" >
+        </meta-data>
+        <!-- END SNOWFISH SDK -->
+
+
+        <!-- com.snowfish.appid 游戏的唯一标识，用于区分不同游戏的唯一标准。在易接开发者中心游戏管理模块中创建新游戏获取 -->
+        <meta-data
+            android:name="com.snowfish.appid"
+            android:value="{247A0309-2FD0FADE}" >
+        </meta-data>
+
+        <!-- com.snowfish.channelid 支付渠道标识，此id可区分渠道，在易接后台有相应的渠道对照表 -->
+        <meta-data
+            android:name="com.snowfish.channelid"
+            android:value="{4ff036a1-3254eafe}" >
+        </meta-data>
+
+        <!-- 易接SDK end -->
+    </application>
+</manifest>
+

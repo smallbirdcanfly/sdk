@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/y22"
+        android:layout_marginRight="@dimen/y22"
+        android:background="@drawable/shape_userl_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hint_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginTop="@dimen/y45"
+                android:gravity="center"
+                android:text="Title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/y44"/>
+
+            <ImageView
+                android:id="@+id/hint_imgClose"
+                android:layout_width="@dimen/y33"
+                android:layout_height="@dimen/y33"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/y27"
+                android:layout_marginTop="@dimen/y20"
+                android:src="@drawable/wan_close" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/hint_img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y200"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/y20"
+            android:layout_marginRight="@dimen/y20"
+            android:src="@drawable/advertisement_image" />
+
+        <TextView
+            android:id="@+id/hint_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y57"
+            android:layout_marginLeft="@dimen/y90"
+            android:layout_marginRight="@dimen/y90"
+            android:text="message"
+            android:textColor="@color/wan669_hint_message"
+            android:textSize="@dimen/y38" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y62"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="@dimen/y250"
+                android:layout_height="@dimen/y75"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/selector_button_hint_login"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

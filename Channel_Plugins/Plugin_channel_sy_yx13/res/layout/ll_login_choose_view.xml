@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ll_login_box_bg">
+
+        <TextView
+            android:id="@+id/tv_loginRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ll_login_register_icon_selector"
+            android:gravity="center"
+            android:text="@string/ll_main_login_register_text"
+            android:textColor="@color/ll_login_choose_text_color"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_loginUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ll_login_user_icon_selector"
+            android:gravity="center"
+            android:text="@string/ll_main_login_user_text"
+            android:textColor="@color/ll_login_choose_text_color"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_loginPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ll_login_phone_icon_selector"
+            android:gravity="center"
+            android:text="@string/ll_main_login_phone_text"
+            android:textColor="@color/ll_login_choose_text_color"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

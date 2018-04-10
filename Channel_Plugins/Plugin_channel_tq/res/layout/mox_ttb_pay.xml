@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingRight="6dip" >
+
+    <EditText
+        android:id="@+id/et_money"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/mox_edit_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:maxLength="9"
+        android:numeric="integer"
+        android:paddingLeft="6dip"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlttbSecondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_money"
+        android:layout_marginTop="7dip" >
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_ttb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="游币余额："
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_ttb_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_ttb_title"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_refresh"
+            android:paddingBottom="6dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="6dip"
+            android:text="刷新"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_ttb_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_ttb_rest"
+            android:text="（1元=10游币）"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="36dip"
+        android:layout_below="@id/rlttbSecondLayout"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/pay_bg"
+        android:gravity="center"
+        android:text="立即付款"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

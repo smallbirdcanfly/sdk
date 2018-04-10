@@ -1,0 +1,12 @@
+{
+    "info": {
+        "channel_id": "64",
+        "game_key":"41b8e817",
+        "department_code":"1"
+    },
+    "channels": [
+    	{
+        	"name": "YXSDK"
+        }
+    ]
+}

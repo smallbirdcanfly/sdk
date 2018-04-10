@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mc_choosepay_backgrount"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 最上面充值中心 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_weight="0.9"
+        android:background="@drawable/mc_choosepay_backgrount_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/iv_mch_pay_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/mch_choosepay_close2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="充值中心"
+            android:textColor="#ffffff"
+            android:textSize="21dp"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/iv_mch_pay_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/mch_choosepay_close2" />
+    </LinearLayout>
+
+    <!-- 中间商品价格 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1.2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mch_choosepay_money" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:text="商品价格"
+                android:textColor="#000"
+                android:textSize="19sp"
+                android:typeface="serif" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="fill_parent"
+                android:background="#a0a0a0"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="0.01"
+                android:textColor="#FF0000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="元"
+                android:typeface="sans" 
+                android:textColor="#000"
+                android:textSize="19sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="8dp"
+        android:background="#55434343" />
+
+    <!-- 支付选项列表 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_hfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_hfb_e"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_ico_80_hfb" />
+
+                    <ImageView
+                        android:id="@+id/im_check_hfb"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_hfb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="汇付宝"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/ll_jby_e"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mc_choosepay_backgrount_pay"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_ico_80_jby" />
+
+                    <ImageView
+                        android:id="@+id/im_check_jby"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_jby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="聚宝云"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_zfb_e"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_ico_80_zfb" />
+
+                    <ImageView
+                        android:id="@+id/im_check_zfb"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_zfb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="支付宝"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_wx_e"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_ico_80_wx" />
+
+                    <ImageView
+                        android:id="@+id/im_check_wx"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="微信"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ptb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_ptb_e"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_ico_80_ptb" />
+
+                    <ImageView
+                        android:id="@+id/im_check_ptb"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/mch_choosepay_3030_check"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_ptb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="平台币"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:gravity="left|center_vertical" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:background="#88434340"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="道具名称"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:width="200dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_mc_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.9"
+        android:background="@drawable/mch_button_selector_green"
+        android:text="立即付款"
+        android:textColor="#ffffff"
+        android:textSize="21dp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btn_mc_ptb_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.9"
+        android:background="@drawable/mch_button_selector_green"
+        android:text="平台币付款"
+        android:textColor="#ffffff"
+        android:textSize="21sp"
+        android:typeface="serif"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0.2" />
+
+</LinearLayout>

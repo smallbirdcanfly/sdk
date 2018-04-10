@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dip"
+    android:orientation="vertical"
+     >
+     
+    <ImageView 
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_icon"
+        android:src="@drawable/alipay_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView 
+       android:id="@+id/tv_paymethod"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:gravity="center"
+       android:layout_toRightOf="@id/iv_icon"
+       android:layout_width="match_parent"
+       android:layout_height="38dip"
+       android:text="支付宝"
+       android:textColor="@android:color/black"
+            />
+</RelativeLayout>

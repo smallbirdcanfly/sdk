@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9E9E9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FE690F">
+
+        <RelativeLayout
+            android:id="@+id/rl_guanbi_jjyx"
+            android:paddingLeft="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_guanbi_jjyx"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的代金券"
+            android:textSize="19dp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前登录："
+                android:textSize="17dp"
+                android:textColor="#1c1c1c"/>
+            <TextView
+                android:layout_alignBaseline="@+id/textview1"
+                android:id="@+id/tv_account"
+                android:layout_toRightOf="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="17dp"
+                android:textColor="#ff7800"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#EAEAEA" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_canuse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tv_canuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可使用"
+                        android:textSize="17dp"
+                        android:textColor="@color/jjyx_person_coupon_color_selector"/>
+                    <TextView
+                        android:id="@+id/tv_cannum"
+                        android:layout_toRightOf="@+id/tv_canuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(4)"
+                        android:textSize="17dp"
+                        android:textColor="@color/jjyx_person_coupon_color_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_haduse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tv_haduse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已使用"
+                        android:textSize="17dp"
+                        android:textColor="@color/jjyx_person_coupon_color_selector" />
+                    <TextView
+                        android:id="@+id/tv_hadnum"
+                        android:layout_toRightOf="@+id/tv_haduse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(4)"
+                        android:textSize="17dp"
+                        android:textColor="@color/jjyx_person_coupon_color_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_overuse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tv_overuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已过期"
+                        android:textSize="17dp"
+                        android:textColor="@color/jjyx_person_coupon_color_selector" />
+                    <TextView
+                        android:id="@+id/tv_overnum"
+                        android:layout_toRightOf="@+id/tv_overuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(4)"
+                        android:textSize="17dp"
+                        android:textColor="@color/jjyx_person_coupon_color_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/tabline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FF7800" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

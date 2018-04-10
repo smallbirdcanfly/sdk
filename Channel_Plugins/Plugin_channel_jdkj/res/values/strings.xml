@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="btn_user">用户</string>
+    <string name="btn_gift">礼包</string>
+    <string name="btn_server">客服</string>
+    <string name="btn_bbs">论坛</string>
+   <string name="wx_not_install">您还未安装微信</string>
+    <string name="loading">正在努力的加载...</string>
+    <string name="server_error">服务端异常请稍候重试！</string>
+    <string name="net_error">网络连接错误，请检查当前网络状态！</string>
+    <string name="go_wx_pay">去微信付款</string>
+    <string name="wx_plug_not_install">微信支付插件安装失败，请重新下载游戏</string>
+    <string name="wx_plug_message">使用微信支付需要安装微信支付插件</string>
+    <string name="other_pay_way">选择其他支付方式</string>
+    <string name="copy_file">正在准备支付插件</string>
+    <string name="plug_install">安装</string>
+</resources>

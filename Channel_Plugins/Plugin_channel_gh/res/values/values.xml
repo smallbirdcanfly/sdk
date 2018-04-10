@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ipay_color_title_btn">#93e5ff</color>
+    <color name="ipay_color_value_1">#ffffff</color>
+    <color name="ipay_color_value_2">#f5f5f9</color>
+    <color name="ipay_color_value_2_0">#fafafc</color>
+    <color name="ipay_color_value_2_1">#fafafc</color>
+    <color name="ipay_color_value_3">#e5e5e5</color>
+    <color name="ipay_color_value_4">#a4a4a4</color>
+    <color name="ipay_color_value_4_1">#b9b9b9</color>
+    <color name="ipay_color_value_5">#767676</color>
+    <color name="ipay_color_value_6">#000000</color>
+    <color name="ipay_color_value_7">#0bbcf4</color>
+    <color name="ipay_color_value_7_1">#07ade1</color>
+    <color name="ipay_color_value_7_2">#00c2ff</color>
+    <color name="ipay_color_value_7_6">#709ac4</color>
+    <color name="ipay_color_value_8">#eb5353</color>
+    <color name="ipay_color_value_line_height_1">#e6e6e6</color>
+    <color name="ipay_color_value_line_height_2">#d9d9d9</color>
+    <color name="ipay_transparent">#00000000</color>
+    <color name="ipay_transparent_45">#72000000</color>
+    <color name="ipay_transparent_75">#bf000000</color>
+    <dimen name="ipay_button_heigth">50dp</dimen>
+    <dimen name="ipay_divid_line_h">0.5dp</dimen>
+    <dimen name="ipay_height_34">34dp</dimen>
+    <dimen name="ipay_height_37">37dp</dimen>
+    <dimen name="ipay_height_38">38dp</dimen>
+    <dimen name="ipay_height_40">40dp</dimen>
+    <dimen name="ipay_height_44">44dp</dimen>
+    <dimen name="ipay_height_45">45dp</dimen>
+    <dimen name="ipay_height_48">48dp</dimen>
+    <dimen name="ipay_height_50">50dp</dimen>
+    <dimen name="ipay_height_60">60dp</dimen>
+    <dimen name="ipay_height_70">70dp</dimen>
+    <dimen name="ipay_height_80">80dp</dimen>
+    <dimen name="ipay_height_95">95dp</dimen>
+    <dimen name="ipay_margin_10">10dp</dimen>
+    <dimen name="ipay_margin_11">11dp</dimen>
+    <dimen name="ipay_margin_12">12dp</dimen>
+    <dimen name="ipay_margin_13">13dp</dimen>
+    <dimen name="ipay_margin_15">15dp</dimen>
+    <dimen name="ipay_margin_16">16dp</dimen>
+    <dimen name="ipay_margin_17">17dp</dimen>
+    <dimen name="ipay_margin_18">18dp</dimen>
+    <dimen name="ipay_margin_19">19dp</dimen>
+    <dimen name="ipay_margin_20">20dp</dimen>
+    <dimen name="ipay_margin_22">22dp</dimen>
+    <dimen name="ipay_margin_25">25dp</dimen>
+    <dimen name="ipay_margin_26">26dp</dimen>
+    <dimen name="ipay_margin_27">27dp</dimen>
+    <dimen name="ipay_margin_28">28dp</dimen>
+    <dimen name="ipay_margin_3">3dp</dimen>
+    <dimen name="ipay_margin_30">30dp</dimen>
+    <dimen name="ipay_margin_32">32dp</dimen>
+    <dimen name="ipay_margin_35">35dp</dimen>
+    <dimen name="ipay_margin_4">4dp</dimen>
+    <dimen name="ipay_margin_40">40dp</dimen>
+    <dimen name="ipay_margin_45">45dp</dimen>
+    <dimen name="ipay_margin_47">47dp</dimen>
+    <dimen name="ipay_margin_5">5dp</dimen>
+    <dimen name="ipay_margin_50">50dp</dimen>
+    <dimen name="ipay_margin_6">6dp</dimen>
+    <dimen name="ipay_margin_7">7dp</dimen>
+    <dimen name="ipay_margin_8">8dp</dimen>
+    <dimen name="ipay_margin_9">9dp</dimen>
+    <dimen name="ipay_password_edittext_h">53dp</dimen>
+    <dimen name="ipay_password_edittext_w">318dp</dimen>
+    <dimen name="ipay_text_size_10">10sp</dimen>
+    <dimen name="ipay_text_size_11">11sp</dimen>
+    <dimen name="ipay_text_size_12">12sp</dimen>
+    <dimen name="ipay_text_size_13">13sp</dimen>
+    <dimen name="ipay_text_size_14">14sp</dimen>
+    <dimen name="ipay_text_size_15">15sp</dimen>
+    <dimen name="ipay_text_size_16">16sp</dimen>
+    <dimen name="ipay_text_size_17">17sp</dimen>
+    <dimen name="ipay_text_size_18">18sp</dimen>
+    <dimen name="ipay_text_size_19">19sp</dimen>
+    <dimen name="ipay_text_size_20">20sp</dimen>
+    <dimen name="ipay_text_size_23">23sp</dimen>
+    <dimen name="ipay_text_size_28">28sp</dimen>
+    <dimen name="ipay_title_bar_text_line_margin">1dp</dimen>
+    <dimen name="ipay_title_h">50dp</dimen>
+    <dimen name="ipay_title_line_heigth">1dp</dimen>
+    <dimen name="ipay_title_mini_h">45dp</dimen>
+    <dimen name="ipay_title_person_center_h">80dp</dimen>
+    <dimen name="ipay_wh_13">13dp</dimen>
+    <dimen name="ipay_wh_20">20dp</dimen>
+    <string name="ipay_common_dialog_title">提  示</string>
+    <string name="ipay_common_loading">正在加载%s...</string>
+    <string name="ipay_common_loading_charge">"正在提交"</string>
+    <string name="ipay_common_pay_fail">支付失败，请重试。</string>
+    <string name="ipay_memory_exception">购买异常请联系客服</string>
+    <string name="ipay_network_error">系统繁忙，请稍候再试...</string>
+    <string name="ipay_network_unconnent">网络连接失败，请检查网络！</string>
+    <string name="ipay_sub_game_chargefeee_tips">本次充值%1$s元，将收取%2$s元手续费，预计到账%3$s</string>
+    <string name="ipay_sub_game_final_rate_msg_3_without">支付%1$s元，其中支付商品%2$s元，剩余%3$s元将充值%4$s%5$s</string>
+    <string name="ipay_sub_game_final_rate_msg_charge">卡内剩余%1$s元将充入爱贝币, 收取%2$s元手续费</string>
+    <string name="ipay_sub_game_final_rate_msg_new">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将充值%5$s%6$s(其中%7$s元为手续费)</string>
+    <string name="ipay_sub_game_final_rate_msg_pay">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将充值%5$s%6$s</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+	<string name="paying">支付中</string>
+	<string name="et_input_money">请输入支付金额</string>
+	<string name="et_input_order_des">订单描述如：精品玩具</string>
+	<string name="submit_pay">提交支付</string>
+	<string name="versions_check_ok">你的版本支持支付</string>
+	<string name="versions_check_no">你的版本不支持支付</string>
+	<string name="select_pay_type">你选择了</string>
+	<string name="click_bt_submit">，点击按钮进行支付</string>
+	<string name="greater_one">金额必须大于1分钱</string>
+	<string name="no_token_id">订单号为空或位数不对，请检查输入的订单号！</string>
+	<string name="new_token">或生成一个新的测试订单号</string>
+	<string name="buy">去财付通支付</string>
+	<string name="loading">正在生成token_id中..</string>
+	<string name="order_query">订单查询</string>
+	<string name="order_id">请输入订单号查询</string>
+	
+	<string name="action_pay">付款</string>
+	<string name="action_stream">流水</string>
+	<string name="action_count">统计</string>
+	<string name="action_share">分享</string>
+	<string name="getting_all_access">正在获取全部订单...</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	<string name="order_success">支付成功</string>
+	<string name="action_cancel">你取消了支付</string>
+	<string name="action_sourch_null">查询不到订单</string>
+	<string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+	
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/ipay_transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ipay_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/ipay_transparent</item>
+        <item name="android:background">@color/ipay_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:paddingTop">35dip</item>
+        <item name="android:paddingBottom">35dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+    </style>
+    <style name="dialogstyle">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

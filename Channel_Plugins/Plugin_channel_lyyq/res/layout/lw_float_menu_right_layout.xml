@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+  
+
+    <LinearLayout
+        android:id="@+id/lw_float_menu_ll"
+        android:layout_width="@dimen/float_menu_width_bg_size"
+        android:layout_height="@dimen/float_menu_height_size"
+        android:background="@drawable/lw_float_menu_right_bg"
+        android:paddingRight="4dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/float_menu_width_size"
+            android:layout_height="@dimen/float_menu_height_size"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="2dp"
+            android:background="@android:color/transparent"
+            android:weightSum="10.0" >
+
+            <TextView
+                android:id="@+id/lw_hide_right_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/lw_hide_icon"
+                android:layout_weight="2.0"
+                android:gravity="center_horizontal"
+                android:textColor="@color/lw_popwin_font_color"
+                android:text="@string/lw_hide" />
+            <TextView
+                android:id="@+id/lw_help_right_tv"
+                android:layout_width="match_parent"
+                android:drawableTop="@drawable/lw_help"
+               	android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:gravity="center_horizontal"
+                android:textColor="@color/lw_popwin_font_color"
+                android:text="@string/lw_help" />
+            <TextView
+                android:id="@+id/lw_strategy_right_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/lw_strategy"
+                android:layout_weight="2.0"
+                android:gravity="center_horizontal"
+                android:textColor="@color/lw_popwin_font_color"
+                android:text="@string/lw_forum_all" />
+            <TextView
+                android:id="@+id/lw_gift_right_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/lw_gift"
+                android:layout_weight="2.0"
+                android:gravity="center_horizontal"
+                android:textColor="@color/lw_popwin_font_color"
+                android:text="@string/lw_gift" />
+            <TextView
+                android:id="@+id/lw_user_right_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/lw_account"
+                android:layout_weight="2.0"
+                android:gravity="center_horizontal"
+                android:textColor="@color/lw_popwin_font_color"
+                android:text="@string/lw_account" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

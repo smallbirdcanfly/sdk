@@ -1,0 +1,13 @@
+{
+    "info": {
+        "channel_id": "130",
+        "game_key": "d8e7e5f0",
+        "department_code":"1",
+        "channel_code":"1"
+    },
+    "channels": [
+		{
+        	"name": "jinli"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestDemo</string>
+    <string name="game_login">游戏登录</string>
+    <string name="exist_account_login">账号密码登录</string>
+    <string name="account_choose">选择账号</string>
+    <string name="comein_game">进入游戏</string>
+    <string name="start_game">开始游戏</string>
+    <string name="back_game">返回游戏</string>
+    <string name="phone_one_key_login">手机一键登录</string>
+    <string name="visitor_login">游客登录</string>
+    <string name="phone_login">手机登录</string>
+    <string name="visitor_model">游客模式</string>
+    <string name="fail_phone_login">手机登录失败</string>
+    <string name="fail_phone_login_part1">无法获取手机号码。或其他原因导致手机登录失败</string>
+    <string name="fail_phone_login_part2">建议使用其他登录方式，或稍后再试</string>
+    <string name="btn_sure">确认</string>
+    <string name="btn_done">完成</string>
+    <string name="phone_account">账号</string>
+    <string name="had_account">点击右侧箭头选择账号</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="erro_input">你输入的账号有误</string>
+    <string name="game_recharge">游戏充值</string>
+    <string name="center_recharge">OK玩充值中心</string>
+    <string name="phone_number">手机号</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="next_step">下一步</string>
+    <string name="read_agree">我已阅读并同意</string>
+    <string name="user_protocol">OK玩用户协议</string>
+    <string name="phone_login_part1">您正使用手机号</string>
+    <string name="phone_login_part2">进行登录</string>
+    <string name="seconds">59秒</string>
+    <string name="seconds_five">5秒</string>
+    <string name="input_code">填写验证码</string>
+    <string name="accept">接受</string>
+    <string name="disaccept">拒绝</string>
+    <string name="game_name">游戏名称</string>
+    <string name="change_recharge_way">切换充值方式</string>
+    <string name="alipay">支付宝</string>
+    <string name="recharge_now">立即充值</string>
+    <string name="fail_reset_pwd">重置密码失败</string>
+    <string name="fail_reset_pwd_part">该账号没有设置对应的安全手机，无法进行密码重置</string>
+    <string name="input_account_phone">输入用户名或手机号</string>
+    <string name="send_code">发送验证码</string>
+    <string name="has">已向</string>
+    <string name="input_new_pwd">输入新密码</string>
+    <string name="configer_pwd">确认新密码</string>
+    <string name="succeed_phone_login">手机登录成功</string>
+    <string name="succeed_phone_login_part1">您即将以</string>
+    <string name="succeed_phone_login_part2">的游客账号进行登录</string>
+    <string name="succeed_phone_login_part3">密码为</string>
+    <string name="succeed_phone_login_part4">已为您自动保存于相册</string>
+    <string name="succeed_pay">支付成功</string>
+    <string name="order_amt">订单金额 :  </string>
+    <string name="kxb_balance">开心币余额 : </string>
+    <string name="fail_account_login">账号登录失败，请重试！</string>
+    <string name="fail_visitor_login">游客登录失败，请重试！</string>
+
+    <string name="btn_name">微信支付</string>
+    <string name="bn_upmp_pay_name">银联支付</string>
+    <string name="bn_alipay_pay_name">支付宝支付</string>
+    <string name="bn_dotpay_name">点卡支付</string>
+    <string name="bn_rechargpay_name">充值卡支付</string>
+    <string name="bn_wechat_name">微信支付</string>
+
+    <string name="us">订单信息</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="et_input_money">请输入支付金额</string>
+    <string name="et_input_order_des">订单描述如：精品玩具</string>
+    <string name="submit_pay">提交支付</string>
+    <string name="versions_check_ok">你的版本支持支付</string>
+    <string name="versions_check_no">你的版本不支持支付</string>
+    <string name="select_pay_type">你选择了</string>
+    <string name="click_bt_submit">，点击按钮进行支付</string>
+    <string name="greater_one">金额必须大于1分钱</string>
+
+    <string name="no_token_id">订单号为空或位数不对，请检查输入的订单号！</string>
+    <string name="new_token">或生成一个新的测试订单号</string>
+    <string name="buy">去财付通支付</string>
+    <string name="loading">正在生成token_id中..</string>
+    <string name="order_query">订单查询</string>
+    <string name="order_id">请输入订单号查询</string>
+
+    <string name="action_pay">付款</string>
+    <string name="action_stream">流水</string>
+    <string name="action_count">统计</string>
+    <string name="action_share">分享</string>
+    <string name="getting_all_access">正在获取全部订单...</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="order_success">支付成功</string>
+    <string name="action_cancel">你取消了支付</string>
+    <string name="action_sourch_null">查询不到订单</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+</resources>

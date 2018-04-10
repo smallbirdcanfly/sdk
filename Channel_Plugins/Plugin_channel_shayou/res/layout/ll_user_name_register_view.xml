@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/ll_login_bg_shape"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ll_login_box_bg"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edt_registerUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ll_text_margin_left_right"
+            android:background="@null"
+            android:hint="请输入账号(6-15位字符)"
+            android:imeOptions="flagNoExtractUi"
+            android:singleLine="true"
+            android:textColor="@color/ll_edt_input_color"
+            android:textColorHint="@color/ll_hint_edt_color"
+            android:textSize="@dimen/ll_edit_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/ll_text_margin_left_right"
+            android:layout_marginRight="@dimen/ll_text_margin_left_right"
+            android:background="@color/ll_color_login_box_gb" />
+
+        <EditText
+            android:id="@+id/edt_registerUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ll_text_margin_left_right"
+            android:background="@null"
+            android:hint="@string/ll_hint_login_user_password"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/ll_edt_input_color"
+            android:textColorHint="@color/ll_hint_edt_color"
+            android:textSize="@dimen/ll_edit_text_size" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ll_color_login_box_gb" />
+
+        <EditText
+            android:id="@+id/edt_registerUserRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="@dimen/ll_text_margin_left_right"
+            android:background="@null"
+            android:hint="请再次输入密码（6-20位）"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:minEms="6"
+            android:singleLine="true"
+            android:textColor="@color/ll_edt_input_color"
+            android:textColorHint="@color/ll_hint_edt_color"
+            android:textSize="@dimen/ll_edit_text_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_registerUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ll_select_common_btn"
+        android:text="注册登录"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/ll_title_btn_text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txt_phone_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/ll_phone_register"
+        android:textColor="@color/ll_sub_text_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

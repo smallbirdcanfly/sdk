@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+	android:id="@+id/dialog_rl_binding"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:background="@drawable/ttw_edit_two_bg">
+    <ImageView 
+        android:id="@+id/dialog_iv"
+        android:layout_height="40dip"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/wancms_login"/>
+
+        <LinearLayout 
+            android:id="@+id/dialog_ll"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:gravity="center_horizontal"
+	        android:layout_below="@id/dialog_iv"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:id="@+id/dialog_tv_count" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="账号：111111"/>
+	        
+	        <TextView 
+	            android:id="@+id/dialog_tv_pwd"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="密码：111111"/>
+        </LinearLayout>
+
+    
+    <TextView
+        android:id="@+id/dialog_tv_text" 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dialog_ll"
+        android:textSize="15sp"
+        android:text="当前账号未绑定手机，绑定后可自行找回密码，保护账号安全"/>
+    
+    <Button 
+        android:id="@+id/dialog_btn_bind" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"      
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dialog_tv_text"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:text="绑定手机"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/dialog_btn_bind"
+        android:orientation="horizontal">
+        
+     <Button
+        android:id="@+id/dialog_btn_ignore" 
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/wancms_go_login"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textSize="16sp"
+        android:text="忽略本次"/>
+    
+    
+    <Button
+        android:id="@+id/dialog_btn_nolonger" 
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/wancms_go_login"
+        android:textSize="16sp"
+        android:text="不再提示"/>
+</LinearLayout>
+</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/dialog_rl_notice"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="300dp"
+		android:background="@drawable/ttw_edit_two_bg"
+		android:layout_centerInParent="true">
+		<ImageView
+			android:id="@+id/dialog_xx"
+			android:layout_height="15dp"
+			android:layout_width="15dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/ttw_delete"/>
+		<TextView
+			android:id="@+id/dialog_tv2"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="10dp"
+			android:textColor="@color/orange_3"
+			android:layout_centerHorizontal="true"
+			android:text="公告栏"/>
+
+		<TextView
+			android:id="@+id/dialog_tv_text2"
+			android:layout_height="wrap_content"
+			android:layout_width="250dp"
+			android:layout_marginLeft="15dip"
+			android:layout_marginRight="15dip"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp"
+			android:layout_below="@id/dialog_tv2"
+			android:textSize="15sp"
+			android:text="当前账号未绑定手机，绑定后可自行找回密码，保护账号安全"/>
+		<Button
+			android:id="@+id/dialog_btn_enter"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="10dp"
+			android:layout_alignParentBottom="true"
+			android:background="@color/orange"
+			android:textColor="@color/white"
+			android:text="进入游戏"/>
+	</RelativeLayout>
+</RelativeLayout>

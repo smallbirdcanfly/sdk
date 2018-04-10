@@ -1,0 +1,13 @@
+{
+    "info": {
+        "channel_id": "129",
+        "game_key": "78c23e62",
+        "department_code":"1",
+        "channel_code":"1"
+    },
+    "channels": [
+		{
+        	"name": "lenovo"
+        }
+    ]
+}

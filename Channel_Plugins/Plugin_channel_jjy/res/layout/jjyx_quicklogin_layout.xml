@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/line1_quicklogin_an_jjyx"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/jjyx_dr_white_corners"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#434343"
+                android:textSize="18dp"
+                android:id="@+id/tv_quicklogin_usertype_jjyx"
+                android:text="久久账号"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_quicklogin_name_jjyx"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF6B00"
+                android:text="1382604275"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_quicklogin_swicth_jjyx"
+                android:layout_marginLeft="20dp"
+                android:padding="6dp"
+                android:background="@drawable/jjyx_dr_white_corners5_stroke"
+                android:text="切换账号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateDrawable="@drawable/jjyx_rotate_loading_360"
+                android:indeterminateDuration="1800" />
+
+            <TextView
+                android:textColor="#434343"
+                android:textSize="18dp"
+                android:layout_marginLeft="8dp"
+                android:text="正在登录..."
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

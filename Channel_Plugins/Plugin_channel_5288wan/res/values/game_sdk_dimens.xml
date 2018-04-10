@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="game_sdk_dialog_weight_height">33dp</dimen>
+    <dimen name="game_sdk_dialog_weight_top">16dp</dimen>
+    <dimen name="game_sdk_dialog_weight_padding">20dp</dimen>
+</resources>

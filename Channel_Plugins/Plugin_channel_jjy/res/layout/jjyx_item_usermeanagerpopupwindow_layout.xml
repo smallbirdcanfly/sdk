@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/jjyx_onclick_ba"
+    android:layout_height="45dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image_usertype_itemusermanager_jjyx"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_usertype_jj_jjyx"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_itemusermanager_jjyx"
+            android:text="hfshasmv"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/jjyx_color_xieyi"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/image_de_itemusermanager_jjyx"
+            android:src="@drawable/ic_shanchu_jjyx"
+            android:layout_marginRight="6dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="#8a000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

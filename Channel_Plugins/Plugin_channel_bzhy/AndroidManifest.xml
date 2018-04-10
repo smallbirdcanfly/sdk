@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pyw.unitysdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application android:allowBackup="true" >
+
+        <!-- SDK开始 -->
+        <activity
+            android:name="com.games.act.ApproveActivity"
+            android:exported="true"
+            android:label="@string/gmsdk_sdk_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/gmsdk.games.theme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.games.act.ToolsActivity"
+            android:label="@string/gmsdk_sdk_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@style/gmsdk.games.theme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.games.act.FloatActivity"
+            android:label="@string/gmsdk_sdk_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@style/gmsdk.games.theme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.games.act.RechargeActivity"
+            android:label="@string/gmsdk_sdk_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@style/gmsdk.games.theme"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- SDK结束 -->
+
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- alipay sdk stop -->
+
+
+        <!-- meta-data 开始 -->
+        <meta-data
+            android:name="GAME_APPID"
+            android:value="1062" />
+        <meta-data
+            android:name="GAME_GAMEID"
+            android:value="274" />
+        <!-- meta-data 结束 -->
+    </application>
+
+</manifest>

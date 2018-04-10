@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gmsdk_base_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/gmsdk_action_bar" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/gmsdk_photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@android:string/unknownName"
+                        android:src="@drawable/gmsdk_avatar_x" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/gmsdk_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:maxLength="25"
+                            android:maxLines="1"
+                            android:text="昵称"
+                            android:textColor="@color/gmsdk_font" />
+
+                        <ImageView
+                            android:id="@+id/gmsdk_sex"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_toEndOf="@+id/gmsdk_nickname"
+                            android:layout_toRightOf="@+id/gmsdk_nickname"
+                            android:src="@drawable/gmsdk_ic_female" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gmsdk_line2" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gmsdk_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/gmsdk_sic_phone"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="手机号码"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_qq"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/gmsdk_sic_qq"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="未绑定"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_wechat"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/gmsdk_sic_wechat"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="未绑定"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_updata_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/gmsdk_sic_updata_account"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="升级账号"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gmsdk_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gmsdk_line2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_marginTop="10dp"
+                            android:drawableLeft="@drawable/gmsdk_sic_lock"
+                            android:drawablePadding="10dp"
+                            android:gravity="left|center_vertical"
+                            android:maxLength="25"
+                            android:maxLines="1"
+                            android:text="修改登录密码"
+                            android:textColor="@color/gmsdk_font"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gmsdk_line2" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gmsdk_small_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/gmsdk_sic_small"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="查看全部小号"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_clean_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="清除记住功能"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gmsdk_line2" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gmsdk_order_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/gmsdk_sic_order"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="查看全部订单"
+                        android:textColor="@color/gmsdk_font"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gmsdk_line2" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

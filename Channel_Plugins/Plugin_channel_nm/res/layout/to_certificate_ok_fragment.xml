@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/mch_attestation_ok"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/my_img_authentication_success3x"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="实名认证提交成功"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+            android:id="@+id/mch_attestation_button_person"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mch_tocerticate_btn_bg"
+            android:text="返回个人中心"
+            android:textColor="#1FCFC5"
+            android:textSize="19sp" />
+    </LinearLayout>
+</LinearLayout>

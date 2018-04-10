@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jjyx_shape_loading2">
+        <ImageView
+            android:id="@+id/image_loadingImageView_jjyx"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/anim"/>
+
+        <TextView
+            android:text="加载中"
+            android:id="@+id/tv_loadingImageView_message_jjyx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textSize="12dp"/>
+    </LinearLayout>
+</LinearLayout>

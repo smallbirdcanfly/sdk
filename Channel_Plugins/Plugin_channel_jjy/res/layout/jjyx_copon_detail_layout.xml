@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FE690F">
+
+        <RelativeLayout
+            android:id="@+id/rl_guanbi_jjyx"
+            android:paddingLeft="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_guanbi_jjyx"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代金券详情"
+            android:textSize="19dp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/jjyx_shape_cupon1"
+                            android:gravity="center"
+                            android:padding="15dp">
+                            <RelativeLayout
+                                android:id="@+id/relativelayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv_mark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="¥"
+                                    android:textSize="15dp"
+                                    android:textColor="#FF7800"/>
+                                <TextView
+                                    android:id="@+id/tv_price"
+                                    android:layout_toRightOf="@+id/tv_mark"
+                                    android:layout_alignBaseline="@+id/tv_mark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="20"
+                                    android:textSize="30dp"
+                                    android:textColor="#FF7800" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_marginTop="15dp"
+                                android:layout_below="@+id/relativelayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="代金券"
+                                android:textSize="15dp"
+                                android:textColor="#FF7800"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2.8"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/jjyx_shape_cupon1"
+                            android:gravity="center"
+                            android:padding="15dp">
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="王者荣耀专用代金券"
+                                android:textSize="20dp"
+                                android:textColor="#474748"/>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="王者荣耀专用。购买时请在代金券一栏选择该券"
+                                android:textSize="15dp"
+                                android:textColor="#ABABAB"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/jjyx_shape_cupon2"
+                            android:gravity="center"
+                            android:paddingLeft="10dp">
+                            <TextView
+                                android:id="@+id/textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="有效期至："
+                                android:textSize="15dp"
+                                android:textColor="#ABABAB"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2.8"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/jjyx_shape_cupon2"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2017-4-28"
+                                android:textSize="15dp"
+                                android:textColor="#ABABAB"
+                                android:layout_centerVertical="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用须知："
+                    android:textColor="#191919"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".满20.01元可用.满20.01元可用.满20.01元可用.满20.01元可用.满20.01元可用"
+                    android:lineSpacingExtra="15dp"
+                    android:textColor="#191919"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注意事项："
+                    android:textColor="#191919"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".满20.01元可用.满20.01元可用.满20.01元可用.满20.01元可用.满20.01元可用"
+                    android:lineSpacingExtra="15dp"
+                    android:textColor="#191919"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

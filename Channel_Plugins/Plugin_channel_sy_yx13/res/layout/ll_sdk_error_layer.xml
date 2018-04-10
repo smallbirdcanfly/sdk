@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ll_login_box_tips_bg"
+    android:clickable="true"
+    android:paddingBottom="0dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="0dp" >
+
+    <TextView
+        android:id="@+id/ll_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ll_login_tips_warning_icon"
+        android:textColor="@color/ll_error_msg_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_error_exit"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ll_back_btn_selector"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ll_tips_closed_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

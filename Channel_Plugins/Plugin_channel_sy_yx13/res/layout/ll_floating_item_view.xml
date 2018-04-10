@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_itemContainer"
+        android:layout_width="34.3dp"
+        android:layout_height="34.3dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ll_select_floating_menu_cicle_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ll_ivIcon"
+            android:layout_width="17.3dp"
+            android:layout_height="17.3dp"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/ll_tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ll_white"
+            android:textSize="8.2sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ll_viewNewMsgTips"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_alignRight="@id/ll_itemContainer"
+        android:layout_alignTop="@id/ll_itemContainer"
+        android:layout_marginLeft="-3dp"
+        android:background="@drawable/ll_shape_red_dot"/>
+
+</RelativeLayout>

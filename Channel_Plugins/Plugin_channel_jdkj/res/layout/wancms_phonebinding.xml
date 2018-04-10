@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ttw_edit_two_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="手机绑定"/>
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_logo"
+        >
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/ttw_edit_two_bg"
+            android:hint="请输入手机号"
+            android:textColorHint="#c8c8c8"
+            android:textSize="15dip"
+            android:textColor="#818181"
+            android:paddingLeft="40dip"
+            android:paddingRight="85dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/iv_phoneuser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/et_username"
+            android:layout_alignTop="@id/et_username"
+            android:layout_alignLeft="@id/et_username"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/wancms_user"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_yzm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_username"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <EditText
+                android:id="@+id/et_yzm"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/ttw_edit_two_bg"
+                android:hint="请输入验证码"
+                android:textColorHint="#c8c8c8"
+                android:textSize="14sp"
+                android:textColor="#818181"
+                android:paddingLeft="40dip"
+                android:paddingRight="20dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="40dp"
+                android:layout_height="40dip"
+                android:layout_alignBottom="@id/et_yzm"
+                android:layout_alignTop="@id/et_yzm"
+                android:layout_alignLeft="@id/et_yzm"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:focusable="true"
+                android:scaleType="center"
+                android:src="@drawable/wancms_identify_code"/>
+            <Button
+                android:id="@+id/btn_get_identifycode"
+                android:layout_width="85dip"
+                android:layout_height="40dip"
+                android:layout_alignBottom="@id/et_yzm"
+                android:layout_alignRight="@id/et_yzm"
+                android:layout_alignTop="@id/et_yzm"
+                android:focusable="true"
+                android:background="@color/gray4"
+                android:text="获取验证码"
+                android:textSize="14sp"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_username"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip">
+
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/ttw_edit_two_bg"
+                android:hint="请输入游戏密码"
+                android:password="true"
+                android:textColorHint="#c8c8c8"
+                android:textSize="14sp"
+                android:textColor="#818181"
+                android:paddingLeft="40dip"
+                android:paddingRight="20dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="40dp"
+                android:layout_height="40dip"
+                android:layout_alignBottom="@id/et_pwd"
+                android:layout_alignTop="@id/et_pwd"
+                android:layout_alignLeft="@id/et_pwd"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:focusable="true"
+                android:scaleType="center"
+                android:src="@drawable/wancms_password"/>
+            <ImageView
+                android:id="@+id/iv_pwdishow"
+                android:layout_width="40dp"
+                android:layout_height="40dip"
+                android:layout_alignBottom="@id/et_pwd"
+                android:layout_alignTop="@id/et_pwd"
+                android:layout_alignRight="@id/et_pwd"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:focusable="true"
+                android:scaleType="center"
+                android:src="@drawable/wancms_eye_close"/>
+        </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:orientation="horizontal">
+           <Button
+               android:id="@+id/btn_cancel"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="40dip"
+               android:background="@drawable/ttw_login_in"
+               android:text="取消绑定"
+               android:textColor="@android:color/white"
+               android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_game_in"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dip"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/wancms_go_login"
+            android:text="立即绑定"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+       </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

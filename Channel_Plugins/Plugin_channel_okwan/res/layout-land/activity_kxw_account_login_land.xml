@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/land_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/kxw_round"
+    android:layout_marginTop="@dimen/land_marginTop"
+    android:layout_marginBottom="@dimen/land_marginBottom"
+    android:paddingLeft="@dimen/ten_dip"
+    android:paddingRight="@dimen/ten_dip"
+    tools:context=".activity.KxwAccountLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kxw_logo1"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorGray"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_login"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/ten_dip"
+        android:paddingRight="@dimen/ten_dip"
+        android:background="@drawable/kxw_round">
+
+        <ImageView
+            android:id="@+id/kxw_iv_number"
+            android:layout_width="17dp"
+            android:layout_height="@dimen/twenty_dip"
+            android:src="@drawable/kxw_account"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/kxw_et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/had_account"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/kxw_iv_number"
+            android:layout_marginLeft="@dimen/ten_dip"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:textColor="@color/textGray"/>
+
+        <ImageView
+            android:id="@+id/kxw_iv_arrow"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:src="@drawable/kxw_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dip"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+        <TextView
+            android:id="@+id/kxw_tv_have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/exist_account_login"
+            android:textSize="12sp"
+            android:textColor="@color/textColorGray"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/colorGray"
+            android:layout_below="@id/kxw_tv_have"
+            android:layout_alignLeft="@id/kxw_tv_have"
+            android:layout_alignRight="@id/kxw_tv_have"/>
+        
+        <TextView
+            android:id="@+id/kxw_tv_phone_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/phone_one_key_login"
+            android:textSize="12sp"
+            android:textColor="@color/textColorGray"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/colorGray"
+            android:layout_below="@id/kxw_tv_phone_login"
+            android:layout_alignLeft="@id/kxw_tv_phone_login"
+            android:layout_alignRight="@id/kxw_tv_phone_login"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kxw_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/kxw_button"
+        android:text="@string/comein_game"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:onClick="btnClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/kxw_btn_register"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/ten_dip"
+            android:background="@drawable/kxw_button2"
+            android:text="快速注册"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/kxw_btn_visitor"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/ten_dip"
+            android:background="@drawable/kxw_button3"
+            android:text="@string/visitor_login"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:onClick="btnClick"/>
+    </LinearLayout>
+
+</LinearLayout>

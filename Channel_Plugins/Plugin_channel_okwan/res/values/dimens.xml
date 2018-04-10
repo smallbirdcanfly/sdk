@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="land_width">330dp</dimen>
+    <dimen name="land_marginTop">38dp</dimen>
+    <dimen name="land_marginBottom">30dp</dimen>
+    <dimen name="ten_dip">10dp</dimen>
+    <dimen name="twenty_dip">20dp</dimen>
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/game_sdk_shape_bg_round">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/game_sdk_dialog_title_back"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_dismiss"
+        style="@style/game_sdk_dialog_title_dismiss"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/game_sdk_dialog_tile_text"
+        android:text="@string/game_sdk_win_account_shiming" />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginRight="@dimen/game_sdk_dialog_weight_padding"
+        android:text="@string/game_sdk_win_account_shiming_tips"
+        android:textColor="@color/game_sdk_common_text_color"
+        android:textSize="12sp" />
+
+    <com.yyjia.sdk.widget.ClearEditText
+        android:id="@+id/et_name"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_below="@+id/tv_notice"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginRight="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_padding"
+        android:background="@drawable/game_sdk_shape_bg_input"
+        android:hint="@string/game_sdk_win_account_inpname" />
+
+    <com.yyjia.sdk.widget.ClearEditText
+        android:id="@+id/et_id_number"
+        style="@style/game_sdk_dialog_edit_text"
+        android:layout_below="@+id/et_name"
+        android:layout_marginLeft="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginRight="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_padding"
+        android:background="@drawable/game_sdk_shape_bg_input"
+        android:hint="@string/game_sdk_win_account_inpsfz" />
+
+    <Button
+        android:id="@+id/btn_identity_auth"
+        style="@style/game_sdk_dialog_btn"
+        android:layout_below="@+id/et_id_number"
+        android:layout_marginTop="@dimen/game_sdk_dialog_weight_padding"
+        android:text="@string/game_sdk_win_account_shiming" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_identity_auth"
+        android:layout_marginRight="@dimen/game_sdk_dialog_weight_padding"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_is_notice"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_safe_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/game_sdk_win_login_notip"
+            android:textColor="@color/game_sdk_common_text_color" />
+    </LinearLayout>
+</RelativeLayout>

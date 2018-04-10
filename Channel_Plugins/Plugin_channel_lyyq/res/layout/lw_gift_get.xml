@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/gift_title_layout"
+        
+        layout="@layout/lw_title_layout" />
+
+    <TextView
+        android:id="@+id/response_gift_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lw_get_gift_bt"
+        android:layout_below="@+id/lw_get_gift_bt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/lw_red" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_below="@+id/view1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lw_strategy_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lw_margin_left"
+                android:layout_marginTop="@dimen/lw_margin_top"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/lw_gift_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lw_margin_left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/lw_popwin_login_game_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lw_margin_left"
+                android:layout_marginTop="@dimen/lw_margin_top"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/lw_gift_use_ways"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lw_margin_left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+     <WebView
+        android:id="@+id/lw_gift_get_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="15dp"
+         />
+    
+    
+    <ProgressBar
+        android:id="@+id/lw_gift_have_progress"
+        style="@style/lw_gift_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="20"
+        android:layout_alignLeft="@+id/lw_gift_name_and_endtime_tv"
+        android:layout_alignRight="@+id/response_gift_nums"
+        android:layout_below="@+id/lw_gift_name_and_endtime_tv"
+        android:layout_marginRight="@dimen/lw_margin_left_right" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lw_gift_have_progress"
+        android:layout_margin="@dimen/lw_margin_right"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/lw_gift_progress_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lw_gift_have_progress"
+        android:layout_alignLeft="@+id/lw_gift_have_progress"
+        android:layout_marginLeft="72dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/lw_gift_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_title_layout"
+        android:layout_marginLeft="@dimen/lw_margin_left_right"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/lw_gift_name_and_endtime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lw_gift_name_tv"
+        android:layout_below="@+id/lw_gift_name_tv"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/lw_get_gift_bt"
+        android:layout_width="@dimen/lw_exit_width_size"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lw_gift_have_progress"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/lw_margin_right"
+        android:background="@drawable/lw_exit_button_bg"
+        android:text="@string/get_gift" />
+
+</RelativeLayout>

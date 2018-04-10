@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.KxwProtocolActivity">
+
+    <RelativeLayout 
+        android:id="@+id/kxw_tb_protocol"
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/toolbarColor">
+
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_logo"
+	        android:layout_width="90dp"
+	        android:layout_height="28dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/kxw_logo3"/>
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_delete"
+	        android:layout_width="@dimen/twenty_dip"
+	        android:layout_height="@dimen/twenty_dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="16dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_delete2"
+	        android:clickable="true"/>
+	</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/kxw_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@id/kxw_tb_protocol"
+        android:orientation="horizontal"
+        android:layout_marginLeft="28dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="18dp"
+            android:src="@drawable/kxw_protocol"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dip"
+            android:text="@string/user_protocol"
+            android:textColor="@color/textColorGray"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/kxw_lv_potocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/kxw_layout2"
+        android:layout_below="@id/kxw_layout"
+        android:background="@drawable/kxw_round"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/kxw_tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/textColorGray"/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/kxw_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/kxw_btn_accept"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/kxw_accept"
+            android:text="@string/accept"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/kxw_btn_disaccept"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/twenty_dip"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/kxw_btn_accept"
+            android:background="@drawable/kxw_disaccept"
+            android:text="@string/disaccept"
+            android:textSize="10sp"
+            android:textColor="@color/disacceptColor"
+            android:onClick="btnClick"/>
+    </RelativeLayout>
+
+</RelativeLayout>

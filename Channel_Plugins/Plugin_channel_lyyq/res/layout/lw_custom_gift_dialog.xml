@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="@color/lw_gray_bg_color"
+        android:minHeight="150dp"
+        android:minWidth="250dp" >
+
+        <TextView
+            android:id="@+id/lw_gift_get_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/lw_gift_get_success"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:maxLines="1"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/lw_gift_num_show_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lw_gift_get_title_tv"
+            android:layout_marginLeft="@dimen/lw_margin_left_right"
+            android:layout_marginTop="@dimen/lw_margin_top_buttom"
+            android:layout_toLeftOf="@+id/Lw_copy_gift_num_bt"
+            android:ems="10"
+            android:inputType="none"
+            android:focusable="false" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/Lw_copy_gift_num_bt"
+            style="?android:attr/buttonStyle"
+            android:layout_width="@dimen/lw_exit_width_size"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lw_gift_num_show_et"
+            android:layout_alignBottom="@+id/lw_gift_num_show_et"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/lw_margin_left_right"
+            android:background="@drawable/lw_exit_button_bg"
+            android:text="@string/lw_copy" />
+
+        <Button
+            android:id="@+id/lw_close_gift_dialog_bt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lw_gift_num_show_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/lw_margin_top_buttom"
+            android:background="@drawable/lw_exit_bt"
+            android:text="@string/lw_close" />
+    </RelativeLayout>
+
+</RelativeLayout>

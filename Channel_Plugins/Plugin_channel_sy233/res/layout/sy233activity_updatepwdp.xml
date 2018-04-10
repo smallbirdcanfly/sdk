@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="@color/sy233alpha_bg"
+             android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/popu_contentview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/sy233popup_bg"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/sy233activity_header"/>
+
+        <ScrollView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sy233popup_bottom_bg"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_oldpwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/ib_old_pwd_show"
+                            android:layout_width="30dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/sy233pwd_hide_bg"
+                            android:button="@null"/>
+
+                        <ImageView
+                            android:id="@+id/temp2"
+                            android:layout_width="15dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/sy233lock"/>
+
+                        <EditText
+                            android:id="@+id/ed_old_pwd"
+                            style="@style/sy233register_edit"
+                            android:layout_toLeftOf="@id/ib_old_pwd_show"
+                            android:layout_toRightOf="@+id/temp2"
+                            android:hint="@string/sy233input_oldpwd"
+
+                            android:maxLength="16"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a0a0a0"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/ib_new_pwd_show"
+                            android:layout_width="30dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/sy233pwd_hide_bg"
+                            android:button="@null"/>
+
+                        <ImageView
+                            android:id="@+id/temp3"
+                            android:layout_width="15dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/sy233lock"/>
+
+                        <EditText
+                            android:id="@+id/ed_new_pwd"
+                            style="@style/sy233register_edit"
+                            android:layout_toLeftOf="@id/ib_new_pwd_show"
+                            android:layout_toRightOf="@+id/temp3"
+                            android:hint="@string/sy233input_newpwd"
+
+                            android:maxLength="16"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#a0a0a0"/>
+
+                    <TextView
+                        android:id="@+id/tv_forget_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="8dp"
+                        android:text="忘记密码"
+                        android:textColor="@color/sy233colorPrimary"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/sy233bt_detail_down_bg"
+                    android:text="@string/sy233updatepwd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+

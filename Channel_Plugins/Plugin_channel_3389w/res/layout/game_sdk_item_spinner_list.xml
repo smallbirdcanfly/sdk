@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_sdk_dialog_weight_height"
+        android:layout_weight="1"
+        android:background="@drawable/game_sdk_sha_bg_rectangle"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/game_sdk_common_text_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

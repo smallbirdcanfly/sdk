@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/lw_reg_content_layout"
+        android:layout_width="@dimen/login_layout_width_size"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lw_login_reg_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="@dimen/account_win_width_size"
+            android:layout_height="170dp"
+            android:layout_above="@+id/lw_back_login_tv"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/one_key_regster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一键注册"
+                    android:textColor="@color/lw_link_tv_selector" />
+
+                <TextView
+                    android:id="@+id/acount_key_regster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="账号注册"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <com.shizhefei.view.indicator.ScrollIndicatorView
+                android:id="@+id/lw_reg_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal" >
+            </com.shizhefei.view.indicator.ScrollIndicatorView>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/lw_reg_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/lw_margin_top3" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lw_back_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:layout_marginBottom="19dp"
+            android:text="@string/lw_back_login"
+            android:textColor="@color/lw_link_tv_selector"
+            android:textSize="@dimen/lw_reg_tv_font_size" />
+
+        <RelativeLayout
+            android:id="@+id/lw_reg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/lw_exit_logo_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:contentDescription="@string/lw_reg_no"
+                android:src="@drawable/lw_logo" />
+
+            <TextView
+                android:id="@+id/lw_qq_des_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lw_exit_logo_ig"
+                android:text="@string/lw_reg_no"
+                android:textColor="@color/lw_61_account_login"
+                android:textSize="@dimen/lw_login_reg_title_font_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

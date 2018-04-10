@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lw_gray_bg_color" >
+
+    <include
+        android:id="@+id/recharge_ui_title_layout"
+        layout="@layout/lw_title_layout" />
+
+    <WebView
+        android:id="@+id/lw_recharge_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recharge_ui_title_layout" />
+    <!-- 正在加载的提示 -->
+
+    <ProgressBar
+        android:id="@+id/recharge_game_name"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/recharge_ui_title_layout"
+        android:progressDrawable="@drawable/myprogress_style" />
+</RelativeLayout>

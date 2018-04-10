@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/lw_margin"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/lw_exit_dialog_bg" >
+
+        <ImageView
+            android:id="@+id/lw_exit_logo_ig"
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/lw_margin_top3"
+            android:layout_marginLeft="@dimen/lw_margin_top3"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/lw_gift_bt"
+            android:layout_marginRight="1dp"
+            android:contentDescription="@string/lw_img_content_description"
+            android:scaleType="fitXY"
+            android:src="@drawable/lw_exit_logo" />
+
+        <Button
+            android:id="@+id/lw_exit_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/lw_continue_bt"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/lw_margin"
+            android:background="@drawable/lw_exit_bt"
+            android:text="@string/lw_exit_game"
+            android:textColor="#B3B3B3" />
+
+        <Button
+            android:id="@+id/lw_continue_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lw_exit_logo_ig"
+            android:layout_marginRight="@dimen/lw_margin"
+            android:background="@drawable/lw_exit_button_bg"
+            android:text="@string/lw_continue_game" />
+
+        <Button
+            android:id="@+id/lw_gw_bt"
+            android:layout_width="@dimen/lw_exit_width_size"
+            android:layout_height="64dp"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lw_gift_bt"
+            android:background="@drawable/lw_ebpay_switch_pressed"
+            android:layout_marginRight="8dp"
+            android:text="@string/lw_9461_net" />
+
+        <Button
+            android:id="@+id/lw_gift_bt"
+            android:layout_width="@dimen/lw_exit_width_size"
+            android:layout_height="65dp"
+            android:layout_alignLeft="@+id/lw_gw_bt"
+            android:layout_alignTop="@+id/lw_exit_logo_ig"
+            android:background="@drawable/lw_ebpay_switch_normal"
+            android:text="@string/lw_gift" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

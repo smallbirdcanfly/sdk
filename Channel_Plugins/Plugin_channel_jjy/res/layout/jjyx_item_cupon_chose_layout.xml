@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="16dp"
+       android:paddingRight="16dp"
+       android:gravity="center">
+       <TextView
+           android:id="@+id/tv_cut_jjyx"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textColor="#484848"
+           android:textSize="14dp"/>
+       <TextView
+           android:id="@+id/tv_des_jjyx"
+           android:layout_toRightOf="@+id/tv_cut_jjyx"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textColor="#484848"
+           android:textSize="14dp"/>
+       
+
+       <CheckBox
+           android:layout_alignParentRight="true"
+           android:id="@+id/cb_chose_jjyx"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:background="@drawable/jjyx_choose_coupon_selector"
+           android:button="@null"
+           android:clickable="false"
+           android:focusable="false"
+           android:focusableInTouchMode="false"  />
+   </RelativeLayout>
+
+</LinearLayout>

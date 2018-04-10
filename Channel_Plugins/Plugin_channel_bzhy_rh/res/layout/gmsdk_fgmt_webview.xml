@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gmsdk_error_font"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/gmsdk_action_bar"
+        layout="@layout/gmsdk_action_bar" />
+
+    <com.games.view.HunkWebView
+        android:id="@+id/gmsdk_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gmsdk_action_bar" />
+
+    <ProgressBar
+        android:id="@+id/gmsdk_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

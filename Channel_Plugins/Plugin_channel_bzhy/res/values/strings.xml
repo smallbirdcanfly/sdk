@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gmsdk_sdk_name">GameSDK</string>
+
+    <string name="gmsdk_start_game">进入游戏</string>
+
+    <string name="file_upload_server_url">http://sdk.17wjz.com/android_debug_upload_log/upload.php</string>
+
+    <!-- <string name="file_upload_server_url">http://b.sdk.t-juli.com/android_debug_upload_log/upload.php</string> -->
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".activity.KxwResetPwd3Activity">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/toolbarColor">
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <TextView
+	        android:id="@+id/kxw_tv_reset_pwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/reset_pwd"
+	        android:textSize="18sp"
+	        android:textColor="@color/colorBlack"/>
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/kxw_round">
+
+        <ImageView
+            android:id="@+id/kxw_iv_pwd"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/kxw_pwd2"/>
+
+        <EditText
+            android:id="@+id/kxw_et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kxw_iv_pwd"
+            android:layout_marginLeft="12dp"
+            android:hint="@string/input_new_pwd"
+            android:textColor="@color/textColorGray"
+            android:textSize="15sp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/kxw_round">
+
+        <ImageView
+            android:id="@+id/kxw_iv_pwd2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/kxw_pwd2"/>
+
+        <EditText
+            android:id="@+id/kxw_et_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kxw_iv_pwd2"
+            android:layout_marginLeft="12dp"
+            android:hint="@string/configer_pwd"
+            android:textColor="@color/textColorGray"
+            android:textSize="15sp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kxw_btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/kxw_button"
+        android:text="@string/btn_sure"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

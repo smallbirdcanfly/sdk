@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffff"
+      android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FE690F">
+
+        <RelativeLayout
+            android:id="@+id/rl_guanbi_jjyx"
+            android:paddingLeft="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_guanbi_jjyx"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:textSize="19dp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_identi1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尊敬的用户:\n\t\t\t根据国家规定，游戏用户需登记个人实名信息。信息仅用于国家规定的实名认证，不会用于其它用途且绝对保密!\n\t\t\t未成年人不能在游戏中进行支付！"
+                        android:textSize="15dp"
+                        android:textColor="#707070"
+                        android:lineSpacingExtra="5dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:id="@+id/iv_name_icon_jjyx"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_custom_service_jjyx" />
+
+                        <EditText
+                            android:background="@null"
+                            android:id="@+id/et_name"
+                            android:layout_toRightOf="@+id/iv_name_icon_jjyx"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="请输入真实姓名"
+                            android:textColorHint="#ababab"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#EAEAEA"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:id="@+id/iv_identi_icon_jjyx"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_identy_jjyx" />
+
+                        <EditText
+                            android:background="@null"
+                            android:id="@+id/et_identi"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/iv_identi_icon_jjyx"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="请输入身份证号码"
+                            android:textColorHint="#ababab"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:inputType="number"
+                            android:digits="0123456789xyzXYZ"/>
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:id="@+id/iv_clear_jjyx"
+                            android:src="@drawable/ic_quanshan_jjyx"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#EAEAEA"/>
+
+                    <Button
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/jjyx_button_gologin"
+                        android:textColor="#ffffff"
+                        android:id="@+id/bt_commit_jjyx"
+                        android:text="确认"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_identi2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#E9E9E9"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_hasidenti_icon_jjyx"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_has_identi_jjyx"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/iv_hasidenti_icon_jjyx"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+                    
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_name_jjyx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16dp"
+                            android:textColor="#1c1c1c"/>
+                        <TextView
+                            android:padding="1dp"
+                            android:layout_toRightOf="@+id/tv_name_jjyx"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已认证"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:background="@drawable/jjyx_button_gologin"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/textview_jjyx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身份证："
+                            android:textSize="14dp"
+                            android:textColor="#ababab"/>
+                        <TextView
+                            android:id="@+id/tv_identi_jjyx"
+                            android:layout_toRightOf="@+id/textview_jjyx"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="14dp"
+                            android:textColor="#ababab"/>
+
+                    </RelativeLayout>
+                    
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

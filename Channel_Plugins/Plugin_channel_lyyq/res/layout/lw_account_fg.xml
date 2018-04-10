@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lw_account_bg" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/lw_margin"
+                android:layout_weight="0.41" >
+
+                <TextView
+                    android:id="@+id/lv_account_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lw_icon"
+                    android:layout_marginLeft="44dp"
+                    android:layout_toRightOf="@+id/lw_icon"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/item_icon_ig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lv_account_money_tv"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/lw_icon"
+                    android:visibility="invisible"
+                    android:contentDescription="@string/pay"
+                    android:src="@drawable/lw_gold" />
+
+                <TextView
+                    android:id="@+id/lw_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/lw_hao_lb_tv"
+                    android:layout_alignBottom="@+id/lw_hao_lb_tv"
+                    android:layout_toRightOf="@+id/lw_hao_lb_tv"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/item_content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/lw_hao_lb_tv"
+                    android:layout_above="@+id/lw_hao_lb_tv"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/lw_player"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/lw_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="41dp"
+                    android:contentDescription="@string/pay"
+                    android:src="@drawable/lw_logo" />
+
+                <TextView
+                    android:id="@+id/lw_hao_lb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/item_icon_ig"
+                    android:layout_alignTop="@+id/item_icon_ig"
+                    android:text="@string/lw_number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/account_sate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/account_modify_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+    				android:layout_marginRight="10dp"
+                    layout="@layout/lw_account_list_item"
+                    android:clickable="true" />
+
+                <include
+                    android:id="@+id/account_safe_ways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginLeft="10dp"
+    				android:layout_marginRight="10dp"
+                    layout="@layout/lw_account_list_item"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_recharge_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/account_recharge_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+    				android:layout_marginRight="10dp"
+                    layout="@layout/lw_account_list_item"
+                    android:clickable="true" />
+
+                <include
+                    android:id="@+id/account_rechare_u"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+    				android:layout_marginRight="10dp"
+                    android:layout_marginTop="-2dp"
+                    layout="@layout/lw_account_list_item"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/more_account_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                layout="@layout/lw_account_list_item"
+                android:visibility="gone"
+                android:clickable="true" />
+
+            <include
+                android:id="@+id/auto_login_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                layout="@layout/lw_auto_login_item"
+                android:clickable="true" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

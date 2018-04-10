@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- default -->
+    <item android:drawable="@drawable/ll_login_user_normal_icon" android:state_pressed="false" />
+    <!-- checked -->
+    <item android:drawable="@drawable/ll_login_user_click_icon" android:state_pressed="true" />
+
+</selector>

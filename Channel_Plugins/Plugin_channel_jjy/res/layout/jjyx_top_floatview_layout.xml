@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="-47dp"
+        android:background="@drawable/jjyx_dr_white_corners"
+        android:gravity="center"
+        android:id="@+id/liear_tophint_an_jjyx"
+        android:orientation="horizontal"
+        android:layout_width="340dp"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/image_tophint_usertype_jjyx"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_usertype_jj_jjyx"/>
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tv_tophint_name_jjyx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="186205777880000"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=", 欢迎进入游戏!"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>

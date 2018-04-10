@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_height="45dp"
+        android:paddingLeft="50dp"
+        android:gravity="center"
+        android:background="@drawable/jjyx_float_popup_background_left"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/ll_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_zhuxiao_jjyx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注销"
+                android:textColor="#484848"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="#BBBBBB"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_zhanghuaq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_zhanghu_jjyx"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_zhanghuaq_jjyx" />
+
+            <TextView
+                android:id="@+id/tv_zhanghu_jjyx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心"
+                android:textColor="#484848"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="#BBBBBB"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+         <LinearLayout
+            android:id="@+id/ll_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+             android:gravity="center"
+            android:orientation="vertical" >
+
+             <ImageView
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:src="@drawable/ic_chongzhi_jjyx" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="充值中心"
+                 android:textColor="#484848"
+                 android:textSize="11dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

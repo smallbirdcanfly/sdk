@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gmsdk_all"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:background="@color/gmsdk_cover"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gmsdk_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/gmsdk_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gmsdk_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017/12"
+            android:textColor="@color/gmsdk_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gmsdk_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/gmsdk_font3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gmsdk_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017年12月1日"
+            android:textColor="@color/gmsdk_font_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sdk_reg_relayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/y638"
+        android:layout_height="@dimen/y481"
+        android:background="@drawable/shape_userl_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/account_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y74"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/y36"
+                    android:text="@string/wan669_register"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/y33" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/y26"
+                android:background="#353533"></View>
+            <!--<include layout="@layout/reg_tab"></include>-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y21"
+
+                android:stretchColumns="0,1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-1dp">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/y598"
+                        android:layout_height="@dimen/y89"
+                        android:layout_marginRight="@dimen/y19"
+                        android:background="@drawable/shape_oval_edit_width">
+
+                        <EditText
+                            android:id="@+id/sdk_reg_account"
+                            android:layout_width="@dimen/y500"
+                            android:layout_height="@dimen/y88"
+                            android:background="@color/WanSDK_transparent"
+                            android:hint="@string/wan669_register_account"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/y33"
+                            android:textColor="@color/wan669_input_edit"
+                            android:textColorHint="@color/wan669_hint_edit"
+                            android:textSize="@dimen/y33" />
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/y598"
+                        android:layout_height="@dimen/y89"
+                        android:layout_marginRight="@dimen/y19"
+                        android:background="@drawable/shape_oval_edit_width2">
+
+                        <EditText
+                            android:id="@+id/sdk_reg_pwd"
+                            android:layout_width="@dimen/y500"
+                            android:layout_height="@dimen/y89"
+                            android:layout_marginTop="-1dp"
+                            android:background="@color/WanSDK_transparent"
+                            android:hint="@string/wan669_login_password_hint"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/y33"
+                            android:textColor="@color/wan669_input_edit"
+                            android:textColorHint="@color/wan669_hint_edit"
+                            android:textSize="@dimen/y33" />
+
+                        <com.wan669.sdk.utils.SwitchView
+                            android:id="@+id/wan_switch"
+                            android:layout_width="@dimen/y90"
+                            android:layout_height="@dimen/y43"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/sdk_btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y87"
+                android:layout_marginLeft="@dimen/y18"
+                android:layout_marginRight="@dimen/y18"
+                android:layout_marginTop="@dimen/y27"
+                android:background="@drawable/selector_button_login"
+                android:gravity="center"
+                android:onClick="finish_login"
+                android:text="@string/sdk_register"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/y33" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_left_return"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y89"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/y21"
+                android:text="@string/wan669_regist_return"
+                android:textColor="#b8bab9"
+                android:textSize="@dimen/y24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/register_account_rerutn"
+        android:layout_width="@dimen/y250"
+        android:layout_height="@dimen/y96"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/y51"
+        android:background="@drawable/shape_oval_luner_btn"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="@dimen/y250"
+            android:layout_height="@dimen/y96">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="@dimen/y66"
+                    android:layout_height="@dimen/y66"
+                    android:layout_marginLeft="@dimen/y20"
+                    android:src="@drawable/icon_recycle" />
+
+                <TextView
+                    android:layout_width="@dimen/y130"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y10"
+                    android:textColor="@color/wan669_btn_white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

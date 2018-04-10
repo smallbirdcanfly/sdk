@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mcplatform_trans">#90000000</color>
+    <color name="mchcontrolgran">#9000</color>
+    <color name="transparent">#0000</color>
+    <color name="certificate">#BEBEBE</color>
+    <color name="certificate2">#F0F0F0</color>
+
+</resources>

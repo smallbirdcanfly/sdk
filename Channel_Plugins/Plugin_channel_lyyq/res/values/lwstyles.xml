@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+    <style name="AlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/lw_popup_bg</item>
+    </style>
+    
+    <style name="lw_gift_progress">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/lw_gift_progress_draw</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    
+    
+    <style name="mProgress_circle">  
+	    <item name="android:indeterminateDrawable">@drawable/lw_progress_indeterminate</item>  
+	    <item name="android:minWidth">25dp</item>  
+	    <item name="android:minHeight">25dp</item>  
+	    <item name="android:maxWidth">60dp</item>  
+	    <item name="android:maxHeight">60dp</item>  
+	</style> 
+</resources>

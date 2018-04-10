@@ -1,0 +1,13 @@
+{
+    "info": {
+        "channel_id": "147",
+        "game_key": "40fc898c",
+        "department_code":"1",
+        "channel_code":""
+    },
+    "channels": [
+		{
+        	"name": "qmwl"
+        }
+    ]
+}

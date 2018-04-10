@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/lw_title_layout"
+        	android:id="@+id/modify_title_layout"
+        />
+    <TextView
+        android:id="@+id/your_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/lw_margin_left_right"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/modify_title_layout"
+        android:text="@string/lw_your_account"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lw_account_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/your_account_tv"
+        android:layout_alignBottom="@+id/your_account_tv"
+        android:layout_toRightOf="@+id/your_account_tv"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lw_second_view_titile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/your_account_tv"
+        android:layout_below="@+id/your_account_tv"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:textColor="@android:color/black"
+        android:text="@string/lw_current_pwd"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/current_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lw_second_view_titile_tv"
+        android:layout_below="@+id/lw_second_view_titile_tv"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="@dimen/lw_margin_left_right"
+        android:background="@drawable/lw_forget_pass_normal"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/lw_input_padding_left"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/pay_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/current_pwd"
+        android:layout_below="@+id/current_pwd"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:textColor="@android:color/black"
+        android:text="@string/lw_new_pwd"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pay_money"
+        android:layout_below="@+id/pay_money"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="@dimen/lw_margin_left_right"
+        android:ems="10"
+        android:background="@drawable/lw_forget_pass_normal"
+        android:paddingLeft="@dimen/lw_input_padding_left"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/lw_modify_pwd_commit_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_pwd"
+        android:layout_alignRight="@+id/new_pwd"
+        android:layout_below="@+id/new_pwd"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:background="@drawable/lw_login_bt_selector"
+        android:textSize="@dimen/lw_button_font_size"
+        android:text="@string/confirm_commit" 
+        
+        />
+
+</RelativeLayout>

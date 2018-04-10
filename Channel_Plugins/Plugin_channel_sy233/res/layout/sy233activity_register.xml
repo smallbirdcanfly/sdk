@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sy233alpha_bg"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+
+ >
+
+    <LinearLayout
+        android:id="@+id/popu_contentview"
+        android:layout_gravity="center"
+        android:background="@drawable/sy233popup_bg"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+        <include layout="@layout/sy233activity_header"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy233popup_bottom_bg"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/ib_phone_clean"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/sy233clean"/>
+
+                    <ImageView
+                        android:id="@+id/temp"
+                        android:layout_width="15dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/sy233phone"/>
+
+                    <EditText
+                        android:id="@+id/ed_phone"
+                        style="@style/sy233register_edit"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toLeftOf="@id/ib_phone_clean"
+                        android:layout_toRightOf="@+id/temp"
+                        android:hint="@string/sy233input_phone"
+                        android:inputType="phone"
+                        android:maxLength="11"/>
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#a0a0a0"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:id="@+id/iv_bmp_code"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                     />
+
+                    <EditText
+                        android:id="@+id/et_input_bmp_code"
+                        style="@style/sy233register_edit"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toLeftOf="@id/iv_bmp_code"
+                        android:hint="请输入图形验证"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#a0a0a0"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/bt_msgcode"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/sy233bt_detail_down_bg"
+                        android:text="@string/sy233input_get_msgcode"
+                        android:textColor="@color/sy233white"
+                        android:textSize="14dp"/>
+
+
+                    <EditText
+                        android:id="@+id/ed_msgcode"
+                        style="@style/sy233register_edit"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toLeftOf="@id/bt_msgcode"
+                        android:hint="@string/sy233input_sure_msgcode"
+                        android:inputType="number"
+                        android:maxLength="6"
+                       />
+                    <!--android:paddingLeft="23dp"-->
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#a0a0a0"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/ib_pwd_show"
+                        android:layout_width="30dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/sy233pwd_hide_bg"
+                        android:button="@null"/>
+
+                    <ImageView
+                        android:id="@+id/temp2"
+                        android:layout_width="15dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/sy233lock"/>
+
+                    <EditText
+                        android:id="@+id/ed_pwd"
+                        style="@style/sy233register_edit"
+                        android:layout_toLeftOf="@id/ib_pwd_show"
+                        android:layout_toRightOf="@+id/temp2"
+                        android:hint="@string/sy233input_pwd"
+                        android:inputType="textPassword"
+                        android:maxLength="20"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#a0a0a0"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_regster"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginRight="41dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sy233bt_detail_down_bg"
+                android:text="@string/sy233register"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="41dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="@string/sy233msgcode_alert"
+                    android:textColor="@color/sy233colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sy233register_alert"/>
+
+                    <TextView
+                        android:id="@+id/tv_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sy233customer_prot"
+                        android:textColor="@color/sy233colorPrimary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+

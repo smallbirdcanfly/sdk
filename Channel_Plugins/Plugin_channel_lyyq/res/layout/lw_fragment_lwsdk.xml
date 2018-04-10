@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lwback"
+    tools:context="com.gzxb.sdkfor61.LWSDK$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/lw_pay_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lw_exit_logo_ig"
+        android:layout_below="@+id/lw_exit_logo_ig"
+        android:layout_marginTop="8dp"
+        android:onClick="lwPay"
+        android:text="充值" />
+
+    <Button
+        android:id="@+id/lw_gift_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lw_pay_bt"
+        android:layout_alignBottom="@+id/lw_pay_bt"
+        android:layout_toRightOf="@+id/lw_pay_bt"
+        android:onClick="showFloatView"
+        android:text="显示悬浮窗" />
+
+    <Button
+        android:id="@+id/lw_gw_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lw_gift_bt"
+        android:layout_alignRight="@+id/lw_gift_bt"
+        android:layout_below="@+id/lw_gift_bt"
+        android:onClick="hideFloatView"
+        android:text="隐藏悬浮窗" />
+
+    <Button
+        android:id="@+id/lw_exit_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lw_gw_bt"
+        android:layout_below="@+id/lw_gw_bt"
+        android:onClick="logoutSwitchAccount"
+        android:text="切换账号" />
+
+    <ImageView
+        android:id="@+id/lw_exit_logo_ig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="96dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/lw_role_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lw_exit_bt"
+        android:layout_alignRight="@+id/lw_pay_bt"
+        android:onClick="Role"
+        android:text="提交角色信息" />
+
+</RelativeLayout>

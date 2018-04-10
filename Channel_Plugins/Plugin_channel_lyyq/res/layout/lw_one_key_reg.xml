@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/lw_one_key_reg_pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/lw_margin_top"
+        android:ems="10"
+        android:hint="@string/lw_input_reg_pwd"
+        android:textSize="@dimen/lw_text_font_size"
+        android:textColorHint="@color/lw_white"
+        android:background="@drawable/lw_input_bg"
+        android:textColor="@color/lw_input_font_color"
+        android:paddingLeft="@dimen/lw_input_padding_left"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/lw_one_key_reg_finish_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lw_one_key_reg_pass_et"
+        android:layout_alignRight="@+id/lw_one_key_reg_pass_et"
+        android:layout_below="@+id/lw_one_key_reg_pass_et"
+        android:background="@drawable/lw_login_bt_selector"
+        android:layout_marginTop="@dimen/lw_margin_top3"
+        android:text="@string/lw_finish_reg" />
+
+</RelativeLayout>

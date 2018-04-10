@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" > 
+
+    <ScrollView
+        android:id="@+id/root_scroll"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lw_title_bg" >
+
+                <TextView
+                    android:id="@+id/lw_login_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lw_card_pay"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/card_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="@string/lw_card_type"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/card_type_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lw_spinner"
+                android:paddingLeft="@dimen/lw_input_padding_left"
+                 />
+
+            <TextView
+                android:id="@+id/card_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="@string/lw_card_denomination"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/card_value_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingLeft="@dimen/lw_input_padding_left"
+                android:background="@drawable/lw_spinner"
+                />
+
+            <EditText
+                android:id="@+id/card_serial_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="@string/lw_card_number"
+                android:paddingLeft="@dimen/lw_input_padding_left"
+                android:background="@drawable/lw_forget_pass_normal"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/card_pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/lw_card_password"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/lw_input_padding_left"
+                android:background="@drawable/lw_forget_pass_normal"
+                 >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/card_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/card_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:text="@string/lw_pay" 
+                android:textSize="@dimen/lw_button_font_size"
+                android:background="@drawable/lw_login_bt_selector"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

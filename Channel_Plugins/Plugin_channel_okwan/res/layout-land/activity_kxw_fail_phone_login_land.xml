@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/land_width"
+    android:layout_height="match_parent"
+    android:background="@drawable/kxw_round"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/land_marginTop"
+    android:layout_marginBottom="@dimen/land_marginBottom"
+    android:paddingLeft="@dimen/twenty_dip"
+    android:paddingRight="@dimen/twenty_dip"
+    tools:context=".activity.KxwFailPhoneLoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/kxw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="38dp">
+
+        <ImageView
+            android:id="@+id/kxw_iv_wrong"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/kxw_wrong"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fail_phone_login"
+            android:textSize="21sp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/kxw_iv_wrong"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fail_phone_login_part1"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fail_phone_login_part2"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/kxw_btn_sure"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorGreen"
+        android:text="@string/btn_sure"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"/>
+
+</LinearLayout>

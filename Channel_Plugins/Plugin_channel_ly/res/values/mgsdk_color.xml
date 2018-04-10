@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="mgsdk_orange" >#FF8400</color>
+     <color name="mgsdk_gray">#7F7C7C</color>
+     <color name="mgsdk_gray_text">#B1B1B1</color>
+     <color name="mgsdk_gray1">#C3C3C3</color>
+     <color name="mgsdk_gray2">#DDDDDD</color>
+     <color name="mgsdk_gray3">#D6D6D6</color>
+     <color name="mgsdk_gray4">#DEDEDE</color>
+     <color name="mgsdk_gray5">#d8d8d8</color>
+     <color name="mgsdk_blues">#4c6791</color>
+     <color name="mgsdk_gray_textcolor">#BEBDBD</color>
+     <color name="mgsdk_white">#F8F8F8</color>
+     <color name="mgsdk_tranparent">#00000000</color>
+     <color name="mgsdk_black">#2A2A2A</color>
+     <color name="mgsdk_blacks">#767575</color>
+     <color name="mgsdk_blue">#1F59FC</color>
+     <color name="mgsdk_blue_btn">#3073ce</color>
+     <color name="mgsdk_red">#FF2D2D</color>
+</resources>

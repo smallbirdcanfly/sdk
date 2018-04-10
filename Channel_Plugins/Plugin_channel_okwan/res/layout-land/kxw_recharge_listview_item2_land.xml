@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/kxw_rl_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingTop="@dimen/twenty_dip"
+    android:clickable="true">
+
+    <CheckBox
+        android:id="@+id/kxw_cb_money"
+        android:layout_width="@dimen/twenty_dip"
+        android:layout_height="@dimen/twenty_dip"
+        android:layout_marginBottom="1dp"
+        android:button="@null"
+        android:background="@drawable/kxw_cb_money"/>
+
+    <TextView
+        android:id="@+id/kxw_tv_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kxw_cb_money"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:textSize="16sp"
+        android:textColor="@color/textColorGray"/>
+    
+    <TextView
+        android:id="@+id/kxw_tv_yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:text=" 元"
+        android:textSize="12sp"
+        android:textColor="@color/colorOrange"/>
+
+    <TextView
+        android:id="@+id/kxw_tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/kxw_tv_yuan"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="0.0"
+        android:textSize="12sp"
+        android:textColor="@color/colorOrange"/>
+    
+    <TextView
+        android:id="@+id/kxw_tv_yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/kxw_tv_balance"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="余额 : "
+        android:textSize="12sp"
+        android:textColor="@color/colorGray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="34dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"/>
+
+</RelativeLayout>

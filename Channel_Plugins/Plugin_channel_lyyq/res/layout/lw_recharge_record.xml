@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lw_title_bg_height_size"
+        android:background="@drawable/lw_title_bg"
+       >
+			<include layout="@layout/lw_title_layout"
+			    	android:id="@+id/lw_recharge_record_title"
+			    />
+       <!--  <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="充值记录"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ -->
+    </RelativeLayout>
+	<include layout="@layout/lw_recharge_record_list_title"
+	    	 android:layout_height="40dp"
+	    	 android:id="@+id/list_title_view"
+	    />
+    <ListView
+        android:id="@+id/recharge_record_list"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+       	android:divider="@drawable/lw_divider"
+        android:layout_height="match_parent"  
+        >
+    </ListView>
+
+</LinearLayout>

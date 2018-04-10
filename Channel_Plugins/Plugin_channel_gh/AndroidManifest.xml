@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pyw.plugin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+ <uses-permission android:name="cn.swiftpass.wxpay.permission.MMOAUTH_CALLBACK" />
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MM_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="xvtian.gai.receiver" />  
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+	<meta-data android:name='myMsg' android:value='hello my activity'></meta-data>
+	
+	
+    <application
+        android:allowBackup="true">
+        <meta-data
+            android:name="HS_APPID"
+            android:value="1" />
+        <meta-data
+            android:name="HS_CLIENTID"
+            android:value="1" />
+        <meta-data
+            android:name="HS_CLIENTKEY"
+            android:value="69ed7c6e98d6c1690711bd56114c5c5a" />
+
+        <activity
+            android:name="com.game.sdk.ui.WebPayActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.game.sdk.ui.FloatWebActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.game.sdk.ui.HuoLoginActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.game.sdk.ui.WebViewActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <service android:name="com.game.sdk.HuosdkService" />
+
+        <activity
+            android:name="com.game.applicaionid.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="noChangeScreenOrientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        
+        <!-- gohuo SDK===============start============= -->
+		<activity
+             android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:name="com.swiftfintech.pay.activity.UnifiedPay"
+            android:screenOrientation="portrait">
+            <intent-filter>
+				<!-- 配置scheme用于qq支付成功后，点击完成回调到商户的app里 -->			                  
+                  <data android:scheme="payscheme" android:host="payResult" 
+                      android:port="8888"/>
+              </intent-filter>
+            </activity>
+         
+         <!-- 支付渠道选择(必须配置) -->	
+         <activity android:name="com.gohuo.pay.sdk.SelectTypeActivity"
+				   android:theme="@style/dialogstyle"/>
+         
+    
+         <activity android:name="com.gohuo.pay.sdk.LoginActivity" android:theme="@style/dialogstyle"/>
+              <!-- 登陆sdk(必须配置) -->	
+         <meta-data android:name="UMENG" android:value="gohuo001"></meta-data> 
+          <!-- gohuo SDK===============end============= -->
+    </application>
+
+</manifest>

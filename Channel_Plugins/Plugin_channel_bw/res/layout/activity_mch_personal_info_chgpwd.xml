@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/util_mch_header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#dde7f0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/mch_input_updatepwd_shape"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/edt_oldPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="输入原始密码"
+                    android:maxLength="15"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="#949494"
+                    android:textColorHint="#949494"
+                    android:textSize="15sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/mch_input_updatepwd_shape"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:maxLength="15"
+                    android:id="@+id/edt_newPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="输入新密码"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="#949494"
+                    android:textColorHint="#949494"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/mch_input_updatepwd_shape"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:maxLength="15"
+                    android:id="@+id/edt_subPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:hint="确认新密码"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:paddingLeft="5dp"
+                    android:textColor="#949494"
+                    android:textColorHint="#949494"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="输入验证码"
+                    android:textColor="#949494"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/mch_input_updatepwd_shape"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/edt_cheNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:paddingLeft="5dp"
+                        android:textColor="#949494"
+                        android:textColorHint="#949494"
+                        android:textSize="20sp">
+                    </EditText>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00222222"
+                    android:minHeight="150dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/mch_cricle_5dp_bg_blue"
+                android:text="确认"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

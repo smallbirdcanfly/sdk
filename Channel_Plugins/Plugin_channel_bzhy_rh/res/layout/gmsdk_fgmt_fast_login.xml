@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gmsdk_base_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/gmsdk_action_bar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="试玩账号已保存至系统图库"
+            android:textColor="@color/gmsdk_font_secondary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="可通过二维码登录"
+            android:textColor="@color/gmsdk_font_secondary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="注意哦！同一设备最大注册三个试玩账号"
+            android:textColor="@color/gmsdk_font_secondary" />
+
+        <TextView
+            android:id="@+id/gmsdk_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:visibility="gone"
+            android:text="错误信息"
+            android:textColor="@color/gmsdk_error_font" />
+
+        <ImageView
+            android:id="@+id/gmsdk_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/gmsdk_photo_frame"
+            android:src="@drawable/gmsdk_image_load" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/gmsdk_save_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/gmsdk_btn_default"
+            android:drawableLeft="@drawable/gmsdk_ic_wechat"
+            android:text="微信收藏"
+            android:textColor="@color/gmsdk_white" />
+
+        <Button
+            android:id="@+id/gmsdk_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/gmsdk_btn_default"
+            android:text="完成"
+            android:textColor="@color/gmsdk_white" />
+    </LinearLayout>
+</RelativeLayout>

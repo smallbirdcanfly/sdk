@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/land_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/kxw_round"
+    android:layout_marginBottom="@dimen/land_marginBottom"
+    android:layout_marginTop="@dimen/land_marginTop"
+    tools:context=".activity.KxwRechargeWayActivity">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@drawable/kxw_toolbar">
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <TextView
+	        android:id="@+id/kxw_tv_recharge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/center_recharge"
+	        android:textSize="17sp"
+	        android:textColor="@color/colorBlack"/>
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_delete"
+	        android:layout_width="@dimen/twenty_dip"
+	        android:layout_height="@dimen/twenty_dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="12dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_delete2"
+	        android:clickable="true"/>
+	</RelativeLayout>
+
+    <ListView
+        android:id="@+id/kxw_lv_way"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/ten_dip"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:scrollbars="none">
+    </ListView>
+
+</LinearLayout>

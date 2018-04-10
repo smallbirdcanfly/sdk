@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/line1_login_an_jjyx"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/jjyx_dr_white_corners"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content">
+
+
+        <!--头部-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image_resetpassword_back_jjyx"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_fanhui_jjyx"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" />
+
+                <Space android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:id="@+id/image_resetpassword_close_jjyx"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_guangbi_jjyx"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="-20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_logo_jjyx"
+                android:layout_centerInParent="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="正在设置账号"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_resetpassword_name_jjyx"
+                android:textColor="#FF6B00"
+                android:text="1382604275"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="的密码"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--用户框-->
+        <LinearLayout
+            android:background="@drawable/jjyx_dr_white_corners45_stroke"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_marginRight="16dp"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:background="@null"
+                android:paddingLeft="8dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:hint="请输入新密码"
+                android:id="@+id/et_resetpassword_password_jjyx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/image_resetpassword_openpassword_jjyx"
+                android:src="@drawable/jjyx_mima_selector"
+                android:layout_marginRight="6dp"
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:textColor="#42000000"
+            android:id="@+id/tv_resetpassword_describe_jjyx"
+            android:layout_marginTop="8dp"
+            android:text="(6-20个字符，区分大小写，不含特殊字符)"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/niear_resetpassword_describe_jjyx"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#42000000"
+                    android:text="密码强度："
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_resetpassword_word_jjyx"
+                    android:textColor="#FF6B00"
+                    android:text="弱"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#42000000"
+                    android:text="（试试字母、数字、符号混搭）"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.gamesdk.jjyx.view.SafetyView
+                android:id="@+id/safetyview_resetpassword_safety_jjyx"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.gamesdk.jjyx.view.SafetyView>
+
+        </LinearLayout>
+
+        <Button
+            android:enabled="false"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="26dp"
+            android:layout_weight="1"
+            android:background="@drawable/jjyx_button_gologin"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt_resetpassword_ok_jjyx"
+            android:text="修改密码"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+{
+    "info": {
+        "channel_id": "128",
+        "game_key": "36dc4b5f",
+        "department_code":"1",
+        "channel_code":"1"
+    },
+    "channels": [
+		{
+        	"name": "baidu"
+        }
+    ]
+}

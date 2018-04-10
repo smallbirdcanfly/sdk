@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".activity.KxwSucceedRechargeActivity">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/toolbarColor">
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <TextView
+	        android:id="@+id/kxw_tv_recharge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/center_recharge"
+	        android:textSize="17sp"
+	        android:textColor="@color/colorBlack"/>
+	
+	    <ImageView
+	        android:id="@+id/kxw_iv_delete"
+	        android:layout_width="@dimen/twenty_dip"
+	        android:layout_height="@dimen/twenty_dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="16dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_delete2"
+	        android:clickable="true"/>
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/kxw_right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeed_pay"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_amt"
+            android:textSize="14sp"
+            android:textColor="@color/textColorGray"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/kxw_rmb"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/protocolColor"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kxw_btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/kxw_button"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/back_game"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

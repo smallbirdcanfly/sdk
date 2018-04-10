@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ll_dialog_cancel">取消</string>
+    <string name="ll_main_login_phone_text">快速注册</string>
+    <string name="ll_main_login_register_text">快速游戏</string>
+    <string name="ll_main_login_user_text">账号登录</string>
+    <string name="ll_login_switch_account">进入游戏（%ds）</string>
+    <string name="ll_warm_prompt">温馨提示：为了保证账号安全，请尽量不要用生日、连续数字等简单密码</string>
+    <string name="ll_user_name_register">切换到普通账号注册</string>
+    <string name="ll_phone_register">切换到手机号码注册</string>
+    <string name="ll_bind_phone_prompt"><Data><![CDATA[亲爱的玩家：为保障您的游戏数据安全，请尽快<font color="#ff6600"><b>绑定手机</b></font>，以免因删除游戏、更换设备导致游戏数据丢失！]]></Data></string>
+    <string name="ll_hint_login_user_username">请输入账号</string>
+    <string name="ll_hint_login_user_password">请输入密码(6-20位)</string>
+    <string name="ll_hint_login_input_phone">请输入11位手机号</string>
+    <string name="ll_hint_login_phone_verify">请输入验证码</string>
+    <string name="ll_recharge_user_enter_title">支付订单</string>
+    <string name="ll_recharge_user_enter_label">购买金额：(单位：元)</string>
+    <string name="ll_recharge_user_enter_value">人民币金额，精确到分</string>
+    <string name="ll_recharge_user_enter_confirm">确认金额</string>
+    <string name="ll_pay_cancel">玩家取消支付</string>
+
+</resources>

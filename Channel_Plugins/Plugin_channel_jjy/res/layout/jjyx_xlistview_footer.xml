@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_footer_content_jjyx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+
+        <ProgressBar
+            android:id="@+id/xlistview_footer_progressbar_jjyx"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/jjyx_rotate_loading_360"
+            android:indeterminateDuration="1800" />
+
+
+        <TextView
+            android:id="@+id/xlistview_footer_hint_textview_jjyx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看更多" />
+    </RelativeLayout>
+
+</LinearLayout>

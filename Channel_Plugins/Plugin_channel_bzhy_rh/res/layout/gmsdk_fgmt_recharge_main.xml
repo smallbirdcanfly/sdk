@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gmsdk_base_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/gmsdk_action_bar"
+        layout="@layout/gmsdk_action_bar" />
+
+    <LinearLayout
+        android:id="@+id/gmsdk_pager_heard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/gmsdk_action_bar"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/gmsdk_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gmsdk_buy"
+        android:gravity="center"
+        android:text="支付"
+        android:textColor="@color/gmsdk_white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/gmsdk_pay_btn"
+        android:layout_below="@id/gmsdk_pager_heard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="您的充值金额为"
+                        android:textColor="@color/gmsdk_font_secondary"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_game_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="asdasdasd"
+                        android:textColor="@color/gmsdk_font_secondary"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="asdasdasd"
+                        android:textColor="@color/gmsdk_font_secondary"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gmsdk_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="10dp"
+                    android:text="330"
+                    android:textColor="@color/gmsdk_buy"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/gmsdk_money"
+                    android:layout_toStartOf="@+id/gmsdk_money"
+                    android:text="仅需支付"
+                    android:textColor="@color/gmsdk_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/gmsdk_money"
+                    android:layout_toRightOf="@+id/gmsdk_money"
+                    android:text="元"
+                    android:textColor="@color/gmsdk_font"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gmsdk_money"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="为您节省"
+                        android:textColor="@color/gmsdk_font" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_thrift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="251.2"
+                        android:textColor="@color/gmsdk_buy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="元"
+                        android:textColor="@color/gmsdk_font" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gmsdk_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toEndOf="@+id/gmsdk_money"
+                    android:layout_toRightOf="@+id/gmsdk_money"
+                    android:background="@drawable/gmsdk_share_black"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="2dp"
+                    android:text="6.0折"
+                    android:textColor="@color/gmsdk_white" />
+
+                <TextView
+                    android:id="@+id/gmsdk_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/gmsdk_money"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="原价：628元"
+                    android:textColor="@color/gmsdk_font" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/gmsdk_layout_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gmsdk_base_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="3"
+                            android:drawableLeft="@drawable/gmsdk_ic_coupons"
+                            android:drawablePadding="7dp"
+                            android:gravity="left|center_vertical"
+                            android:text="抵扣券"
+                            android:textColor="@color/gmsdk_font"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/gmsdk_reload_coupons"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/gmsdk_ic_reload"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gmsdk_line2" />
+
+                    <RadioGroup
+                        android:id="@+id/gmsdk_coupons_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gmsdk_layout_ptb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gmsdk_base_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/gmsdk_ptb_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/gmsdk_ic_money"
+                        android:drawablePadding="4dp"
+                        android:textColor="@color/gmsdk_font" />
+
+                    <TextView
+                        android:id="@+id/gmsdk_ptb_consume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/gmsdk_buy" />
+
+                    <ImageView
+                        android:id="@+id/gmsdk_reload_ptb"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/gmsdk_ic_reload"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gmsdk_base_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gmsdk_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gmsdk_font"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/gmsdk_finally_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="还需再支付628元。"
+                    android:textColor="@color/gmsdk_buy"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/gmsdk_layout_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gmsdk_setup_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="7dp"
+                        android:text="安装支付插件"
+                        android:textColor="@color/gmsdk_link_font"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/gmsdk_pay_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/gmsdk_pay_wechat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/gmsdk_ic_pay_wechat"
+                            android:drawablePadding="4dp"
+                            android:text="微信支付"
+                            android:textColor="@color/gmsdk_font" />
+
+                        <RadioButton
+                            android:id="@+id/gmsdk_pay_alipay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/gmsdk_ic_alipay"
+                            android:drawablePadding="4dp"
+                            android:text="支付宝支付"
+                            android:textColor="@color/gmsdk_font" />
+
+                        <RadioButton
+                            android:id="@+id/gmsdk_pay_qq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/gmsdk_ic_qq"
+                            android:drawablePadding="4dp"
+                            android:text="QQ钱包"
+                            android:textColor="@color/gmsdk_font" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

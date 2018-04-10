@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/land_width"
+    android:layout_height="match_parent"
+    android:background="@drawable/kxw_round"
+    android:layout_marginTop="@dimen/land_marginTop"
+    android:layout_marginBottom="@dimen/land_marginBottom"
+    android:paddingLeft="@dimen/ten_dip"
+    android:paddingRight="@dimen/ten_dip"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    tools:context=".activity.KxwSucceedPhoneLoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/kxw_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/kxw_iv_right"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/kxw_right"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeed_phone_login"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/kxw_iv_right"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/kxw_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kxw_layout1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeed_phone_login_part1"
+            android:textSize="14sp"
+            android:textColor="@color/textColorGray"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/protocolColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeed_phone_login_part2"
+            android:textSize="14sp"
+            android:textColor="@color/textColorGray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kxw_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kxw_layout2"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/ten_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeed_phone_login_part3"
+            android:textSize="14sp"
+            android:textColor="@color/textColorGray"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/protocolColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/succeed_phone_login_part4"
+            android:textSize="14sp"
+            android:textColor="@color/textColorGray"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/kxw_rl_begin"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_below="@id/kxw_layout3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kxw_bg2"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/kxw_tv_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_game"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds_five"
+            android:textSize="11sp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/kxw_tv_begin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

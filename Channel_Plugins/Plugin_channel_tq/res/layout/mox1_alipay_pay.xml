@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="6dip" >
+
+    <LinearLayout
+        android:id="@+id/ll_money"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dip"
+            android:layout_weight="10"
+            android:background="@drawable/mox_edit_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right"
+            android:maxLength="9"
+            android:minWidth="60dp"
+            android:numeric="integer"
+            android:padding="6dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="元" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_money"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dip"
+        android:text="去支付宝付款"
+        android:textColor="#6E6E6E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:background="#00b600"
+        android:gravity="center"
+        android:text="立即付款"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="game_sdk_PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/game_sdk_ani_in</item>
+        <item name="android:windowExitAnimation">@anim/game_sdk_ani_out</item>
+    </style>
+
+    <style name="game_sdk_MyAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/game_sdk_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/game_sdk_anim_out</item>
+    </style>
+
+    <style name="game_sdk_dialog_exit" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="game_sdk_plugin_splash">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="game_sdk_processDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="game_sdk_dialog_tile_text">
+        <item name="android:textSize">21sp</item>
+        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="game_sdk_dialog_title_dismiss">
+        <item name="android:layout_width">22.5dp</item>
+        <item name="android:layout_height">22.5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/game_sdk_pop_dismiss</item>
+    </style>
+
+    <style name="game_sdk_dialog_title_back">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">22.5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">7.5dp</item>
+        <item name="android:background">@drawable/game_sdk_bt_back</item>
+    </style>
+
+    <style name="game_sdk_dialog_edit_text">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/game_sdk_input_text_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/game_sdk_dialog_weight_height</item>
+        <item name="android:layout_marginLeft">@dimen/game_sdk_dialog_weight_padding</item>
+        <item name="android:layout_marginRight">@dimen/game_sdk_dialog_weight_padding</item>
+        <item name="android:background">@drawable/game_sdk_inputbox</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="game_sdk_dialog_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/game_sdk_dialog_weight_height</item>
+        <item name="android:layout_marginLeft">@dimen/game_sdk_dialog_weight_padding</item>
+        <item name="android:layout_marginRight">@dimen/game_sdk_dialog_weight_padding</item>
+        <item name="android:background">@drawable/game_sdk_inputbox2</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

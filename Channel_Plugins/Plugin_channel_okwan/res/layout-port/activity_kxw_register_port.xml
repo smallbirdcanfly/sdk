@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".activity.KxwRegisterActivity">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/toolbarColor">
+
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <TextView
+	        android:id="@+id/kxw_tv_register"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="快速注册"
+	        android:textSize="18sp"
+	        android:textColor="@color/colorBlack"/>
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/kxw_round">
+
+        <RelativeLayout
+            android:id="@+id/kxw_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:padding="@dimen/ten_dip">
+
+            <ImageView
+                android:id="@+id/kxw_iv_number"
+                android:layout_width="16dp"
+                android:layout_height="18dp"
+                android:src="@drawable/kxw_number"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/kxw_et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/kxw_iv_number"
+                android:layout_marginLeft="@dimen/ten_dip"
+                android:hint="账号（6-20位数字、字母、下划线）"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textColor="@color/textGray"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/kxw_tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray"
+            android:layout_below="@id/kxw_rl_top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:padding="@dimen/ten_dip"
+            android:layout_below="@id/kxw_tv_line">
+
+            <ImageView
+                android:id="@+id/kxw_iv_pwd"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/kxw_pwd"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/kxw_et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/kxw_iv_pwd"
+                android:layout_marginLeft="@dimen/ten_dip"
+                android:hint="登录密码（6-20位）"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textColor="@color/textGray"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kxw_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/kxw_button"
+        android:text="注册"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <CheckBox
+            android:id="@+id/kxw_cb_agree"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:background="@drawable/kxw_cb_agree"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kxw_cb_agree"
+            android:text="@string/read_agree"
+            android:textColor="@color/colorBlack"
+            android:textSize="9sp"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kxw_tv_text"
+            android:text="@string/user_protocol"
+            android:textColor="@color/protocolColor"
+            android:textSize="9sp"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/protocolColor"
+            android:layout_below="@id/kxw_tv_protocol"
+            android:layout_alignLeft="@id/kxw_tv_protocol"
+            android:layout_alignRight="@id/kxw_tv_protocol"/>
+    </RelativeLayout>
+
+</LinearLayout>

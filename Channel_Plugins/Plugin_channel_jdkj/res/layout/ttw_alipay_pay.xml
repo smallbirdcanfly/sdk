@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+    
+<LinearLayout 
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"> 
+     
+    <LinearLayout
+        android:id="@+id/ll_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:background="#FFFFFF"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+     <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:text="商品名称:"
+        android:paddingLeft="15dip"
+        android:gravity="center_vertical"       
+        android:textColor="#6E6E6E"
+        android:textSize="16sp" />
+
+     <TextView
+         android:id="@+id/tv_gold_count"
+         android:layout_width="120dp"
+         android:layout_height="match_parent"
+         android:paddingLeft="10dip"
+         android:gravity="center_vertical"
+         android:text="魔神"
+         android:textSize="16sp" />
+    
+    </LinearLayout>
+ 
+  
+    
+   <RelativeLayout
+        android:id="@+id/ll_goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:layout_marginTop="5dip"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+       
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:paddingLeft="15dip"
+            android:textColor="#6E6E6E"
+            android:textSize="16sp"
+            android:text="商品价格:"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_price_count"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dip"
+            android:layout_toRightOf="@id/tv_price"
+            android:gravity="center_vertical"
+            android:text="1"
+            android:textSize="16sp" />
+        
+      <TextView
+            android:id="@+id/tv_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:gravity="center_vertical"
+            android:text="元"
+            android:textColor="#FF8C00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+   <LinearLayout
+        android:id="@+id/ll_curent_acount"
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:layout_marginTop="5dip"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+       
+
+        <TextView
+            android:id="@+id/tv_curent_acount"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:textColor="#6E6E6E"
+            android:paddingLeft="15dip"
+            android:textSize="16sp"
+            android:text="当前账号:"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_count_number"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dip"
+            android:layout_toRightOf="@id/tv_price"
+            android:gravity="center_vertical"
+            android:text="1111111"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    
+   <RelativeLayout
+        android:id="@+id/ll_acount_surplus"
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:layout_marginTop="5dip"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+       
+
+        <TextView
+            android:id="@+id/tv_surplus"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:textColor="#6E6E6E"
+            android:paddingLeft="15dip"
+            android:textSize="16sp"
+            android:text="平台币余额:"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_ttb_count"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dip"
+            android:layout_toRightOf="@id/tv_surplus"
+            android:gravity="left|center"
+            android:text="0"
+            android:textSize="16sp" />
+        
+      <TextView
+          android:id="@+id/tv_refresh"
+          android:layout_width="60dp"
+          android:layout_height="30dip"
+          android:layout_marginRight="10dip"
+          android:background="@drawable/ttw_edit_bg"
+          android:gravity="center"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:text="刷新"
+          android:textSize="14sp" />
+
+    </RelativeLayout>
+       
+    </LinearLayout> 
+    
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_below="@id/ll_content"
+        android:layout_marginTop="15dip"
+        android:background="#FF8C00"
+        android:gravity="center"
+        android:text="立即付款"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

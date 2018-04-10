@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="25dp">
+
+    <LinearLayout
+        android:id="@+id/ll_topTipsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ll_login_auto_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:indeterminateDrawable="@anim/ll_common_progress"/>
+
+        <TextView
+            android:id="@+id/tv_loginAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/ll_edt_input_color"
+            android:textSize="@dimen/ll_edit_text_size"/>
+
+
+        <TextView
+            android:id="@+id/tv_switchAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="切换账号"
+            android:textColor="#366eac"
+            android:textSize="@dimen/ll_edit_text_size"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_switchLoginAccountSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ll_select_common_btn"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/ll_title_btn_text_size"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

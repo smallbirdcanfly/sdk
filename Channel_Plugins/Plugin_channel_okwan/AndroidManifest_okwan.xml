@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liehuotulong.net.nearme.gamecenter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    <!-- {
+    "info": {
+        "channel_id": "55",
+        "game_key": "201ed86a",
+        "department_code":"1"
+    },
+    "channels": [
+    	{
+        	"name": "okwan"
+        }
+    ]
+} -->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 2.2.2新增 银联需要 -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- OPPO -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MMOAUTH_CALLBACK" />
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MM_MESSAGE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="xvtian.gai.receiver" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <!-- 游戏方配置application 若没有则配置成 com.pyw.open.PYWPoxyApplication -->
+    <application
+        android:name="com.pyw.open.PYWPoxyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:taskAffinity="com.junnet.heepay"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+
+        <!-- 朋友玩闪屏配置 -->
+        <activity
+            android:name="com.pengyouwan.sdk.activity.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pyw.demo.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize|fontScale|touchscreen|uiMode|layoutDirection"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+
+                <!-- 请游戏方主界面添加此属性 否则闪屏后进入不了游戏名称必须为：游戏包名+pyw.MAIN -->
+                <action android:name="com.liehuotulong.net.nearme.gamecenter.pyw.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 朋友玩SDK===============start============= -->
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ForgetLoginPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.AccountManagerActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.SetPayPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.UserCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.VoucherActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ChargeCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetLoginPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.MyVoucherActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindAccountActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|locale|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindMobilePhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetAccountPwdUnBindAccountActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.H5Activity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.FastRegisterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.IDCardInfomationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.MianzeActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="portrait" />
+
+        <!-- 朋友玩SDK===============end============= -->
+
+
+        <!-- nearme game sdk config goes here -->
+
+        <activity android:name="com.haiyun.zwq.kxwansdk.activity.KxwBaseActivity" />
+        <activity android:name="com.haiyun.zwq.kxwansdk.activity.NotificationStarterActivity" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwAccountLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwAutoLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwChooseActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwVisitorLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwFailPhoneLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwPhoneLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwRegisterActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwMessageCodeActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwResetPwd2Activity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwResetPwd1Activity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwResetFailActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwResetPwd3Activity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwRechargeWayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwSucceedPhoneLoginActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwProtocolActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.activity.KxwSucceedRechargeActivity"
+            android:screenOrientation="sensor" />
+        <activity android:name="com.haiyun.zwq.kxwansdk.activity.KxwAccountInfoActivity" />
+        <activity android:name="com.haiyun.zwq.kxwansdk.activity.KxwGetRoleInfoActivity" />
+        <activity android:name="com.haiyun.zwq.kxwansdk.activity.KxwLoginOutActivity" />
+        <activity
+            android:name="com.haiyun.zwq.kxwansdk.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <receiver android:name="com.pyw.plugin.okwan.PlatformLoginReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="zwq" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pyw.plugin.okwan.PlatformPayReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="zwq2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pyw.plugin.okwan.PlatformTokenReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="zwq3" />
+            </intent-filter>
+        </receiver>
+        <!-- nearme game sdk config end -->
+    </application>
+
+</manifest>

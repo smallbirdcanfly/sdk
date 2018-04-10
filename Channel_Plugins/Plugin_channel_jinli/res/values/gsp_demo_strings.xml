@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    <string name="gsp_demo_app_name">Amigo_Play_SDK测试游戏版</string>
+-->
+   <string name="gsp_demo_app_name">Amigo_Play_SDK正式游戏版</string>
+    <string name="gsp_demo_single_pay_test">单机版支付测试</string>
+    <string name="gsp_demo_online_pay_test">网游版支付测试</string>
+    <string name="gsp_demo_account_test">账号测试</string>
+    <string name="gsp_demo_account_login_account">登录账号</string>
+    <string name="gsp_demo_account_get_player_id">获取用户登录信息</string>
+    <string name="gsp_demo_account_is_need_upgrade_account">判断是否需要升级</string>
+    <string name="gsp_demo_account_upgrade_account">游客账号升级</string>
+    <string name="gsp_demo_account_logout_account">登出账号</string>
+    <string name="gsp_demo_account_get_amigo_token">获取AmigoToken等信息</string>
+</resources>

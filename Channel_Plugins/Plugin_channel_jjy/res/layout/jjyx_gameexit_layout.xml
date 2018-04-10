@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/line1_gameexit_an_jjyx"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/jjyx_dr_white_corners"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <!--头部-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Space android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:id="@+id/image_gameexit_close_jjyx"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_guangbi_jjyx"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="-20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_logo_jjyx"
+                android:layout_centerInParent="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:text="你确定要退出游戏吗？"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/jjyx_button_gologin"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt_gameexit_ok_jjyx"
+            android:text="退出游戏"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

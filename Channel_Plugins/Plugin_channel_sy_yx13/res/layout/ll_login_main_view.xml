@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_mainTopContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_login_bg_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_LoginMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/ll_login_main_title_color"
+            android:textSize="@dimen/ll_title_btn_text_size"/>
+
+        <FrameLayout
+            android:id="@+id/fl_subView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ll_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ll_mainTopContainer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ll_back_ic"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ll_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/ll_mainTopContainer"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ll_close_ic"
+        android:visibility="gone"/>
+
+</RelativeLayout>

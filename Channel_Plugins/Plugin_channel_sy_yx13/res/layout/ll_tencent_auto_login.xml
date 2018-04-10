@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ll_login_bg_shape"
+    android:gravity="center"
+    android:paddingBottom="25dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="25dp">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="10dp"
+        android:indeterminateDrawable="@anim/ll_common_progress"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="账号正在登录中..."
+        android:textColor="@color/ll_edt_input_color"
+        android:textSize="@dimen/ll_edit_text_size"/>
+
+    <TextView
+        android:id="@+id/tv_switchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="切换账号"
+        android:textColor="#366eac"
+        android:textSize="@dimen/ll_edit_text_size"
+        />
+
+</LinearLayout>

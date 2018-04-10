@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/ll_xiaomi" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ll_notify_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ll_xiaomi_close" />
+
+</FrameLayout>

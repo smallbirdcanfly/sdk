@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="ToastBgColor">#FF424242</color>
+    <color name="btnColor">#FFFFFF</color>
+    <color name="textColorforItemTitle">#FF666666</color>
+    <color name="secondbtntextColor">#FF496ea3</color>
+    <color name="textColorforCheckBox">#FF333333</color>
+    <color name="bgColor">#FFF2F2F2</color>
+    <color name="downLoadTextNomal">#FF3366CC</color>
+    <color name="downLoadTextPressed">#FFFFFFFF</color>
+    <color name="downLoadBackNomal">#FFFFFFFF</color>
+    <color name="downLoadBackFocus">#FF6698E7</color>
+    <color name="downLoadBackPressed">#FF3366CC</color>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+    
+    <color name="lw_red">#EE0000</color>
+    <color name="lw_gray_bg_color">#EEEEEE</color>
+	<color name="lw_tab_main_text_1">#aaa</color>
+    <color name="lw_tab_main_text_2">#74b5f7</color>
+    <color name="lw_tab_top_text_1">#497231</color>
+    <color name="lw_tab_top_text_2">#000</color>
+    <color name="lw_forget_pass_link_default">#FFDC7B</color>
+    <color name="lw_link_default_color">#FD8325</color>
+    <color name="lw_link_click_color">#EE0000</color>
+    <color name="lw_input_font_color">#FFFFFF</color>
+    <color name="lw_61_account_login">#FD8325</color>
+    <color name="lw_recharge_record_title_bg">#FFCE44</color>
+    <color name="lw_tab_select_color">#FF911E</color>
+    <color name="lw_white">#FFFFFF</color>
+    <color name="lw_popwin_font_color">#FFED9D</color>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/lw_gray_bg_color"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/safe_title_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/lw_title_layout" />
+
+    <TextView
+        android:id="@+id/set_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/safe_title_layout"
+        android:text="@string/lw_set_position"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/lw_margin_left_right"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/saft_select_question_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set_question"
+        android:layout_alignRight="@+id/safe_input_question_ans_et"
+        android:layout_below="@+id/set_question"
+        android:layout_marginBottom="@dimen/lw_margin"
+        android:layout_marginTop="@dimen/lw_margin"
+        android:background="@drawable/lw_spinner"
+        android:paddingLeft="@dimen/lw_input_padding_left" />
+
+    <EditText
+        android:id="@+id/safe_input_question_ans_et"
+        android:hint="@string/lw_input_question_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/saft_select_question_sp"
+        android:layout_marginLeft="@dimen/lw_margin_left_right"
+        android:layout_marginRight="@dimen/lw_margin_left_right"
+        android:paddingLeft="@dimen/lw_input_padding_left"
+        android:textSize="@dimen/lw_text_font_size"
+        android:background="@drawable/lw_forget_pass_normal"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/lw_account_safe_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/lw_margin_left_right"
+        android:layout_marginTop="@dimen/lw_margin_top_buttom"
+        android:layout_below="@+id/safe_input_question_ans_et"
+        android:background="@drawable/lw_login_bt_selector"
+        android:text="@string/confirm_commit" />
+
+</RelativeLayout>

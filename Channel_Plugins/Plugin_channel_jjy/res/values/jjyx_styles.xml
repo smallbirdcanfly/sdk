@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="popupWindowAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/jjyx_popup_enter_left</item>
+        <item name="android:windowExitAnimation">@anim/jjyx_popup_exit_left</item>
+    </style>
+    <style name="popupWindowRightAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/jjyx_popup_enter_right</item>
+        <item name="android:windowExitAnimation">@anim/jjyx_popup_exit_right</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!-- LoadingprogressDialog自定义样式 -->
+    <style name="LoadingprogressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="text_style_jjyx1">
+        <item name="android:textColor">#474747</item>
+    </style>
+
+    <style name="text_style_jjyx2">
+        <item name="android:textColor">#FF7700</item>
+    </style>
+
+    <!--确认dialog样式-->
+    <style name="CommitDialogheme" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground"> @android:color/transparent </item>
+    </style>
+</resources>

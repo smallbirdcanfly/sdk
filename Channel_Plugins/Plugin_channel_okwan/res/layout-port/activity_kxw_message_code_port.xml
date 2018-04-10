@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".activity.KxwMessageCodeActivity">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/toolbarColor">
+
+	    <ImageView
+	        android:id="@+id/kxw_iv_back"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/kxw_back_to"
+	        android:clickable="true"/>
+	
+	    <TextView
+	        android:id="@+id/kxw_tv_phone_login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/phone_login"
+	        android:textSize="18sp"
+	        android:textColor="@color/colorBlack"/>
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/kxw_round"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/kxw_iv_phone"
+            android:layout_width="14dp"
+            android:layout_height="@dimen/twenty_dip"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/kxw_phone"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="12sp"
+            android:textColor="@color/textGray"
+            android:layout_toRightOf="@id/kxw_iv_phone"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/kxw_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/kxw_tv_phone"
+            android:layout_marginLeft="16dp"
+            android:hint="@string/input_phone_number"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:textColor="@color/inputTextColor"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kxw_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/kxw_button"
+        android:text="@string/next_step"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="38dp">
+
+        <CheckBox
+            android:id="@+id/kxw_cb_agree"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:background="@drawable/kxw_cb_agree"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kxw_cb_agree"
+            android:text="@string/read_agree"
+            android:textColor="@color/colorBlack"
+            android:textSize="9sp"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/kxw_tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kxw_tv_text"
+            android:text="@string/user_protocol"
+            android:textColor="@color/protocolColor"
+            android:textSize="9sp"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/protocolColor"
+            android:layout_below="@id/kxw_tv_protocol"
+            android:layout_alignLeft="@id/kxw_tv_protocol"
+            android:layout_alignRight="@id/kxw_tv_protocol"/>
+    </RelativeLayout>
+
+</LinearLayout>
